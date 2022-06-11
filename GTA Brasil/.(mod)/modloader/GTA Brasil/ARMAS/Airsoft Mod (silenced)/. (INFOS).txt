@@ -1,0 +1,3 @@
+PT: Nota: se você deseja desinstalar a arma airsoft substituindo a pistola silenciada, também retorne as linhas originais para "PISTOL_SILENCED" no weapon.dat em "ARMAS/_CFG".
+
+EN: Note: if you want to uninstall the airsoft gun replacing the silenced pistol, also return the original lines to "PISTOL_SILENCED" in the weapon.dat in "ARMS/_CFG".

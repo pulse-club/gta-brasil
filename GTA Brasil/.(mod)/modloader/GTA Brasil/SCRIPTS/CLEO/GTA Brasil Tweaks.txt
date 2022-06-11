@@ -1,0 +1,147 @@
+{$CLEO}
+{$USE CLEO+}
+
+/*
+
+ATENÇÃO:
+
+POR CAUSA DA PORRA DA CLEO NÃO DAR SUPORTE PARA O SCRIPT NÃO SER REMOVIDO DA MEMÓRIA, CAUSA CRASH QUANDO REINICIA O JOGO SEM FECHÁ-LO E ABRÍ-LO DE NOVO
+POR CAUSA DISSO FOI COMENTADO AS CHECAGENS DE VALOR PADRÃO, OU SEJA, O SCRIPT SEMPRE IRÁ SUBSTITUIR OS VALORES MESMO QUE OUTROS MODS COMO MIXSETS SUBSTITUA
+UMA BOSTA MAS DEPOIS PASSO ESSE SCRIPT PRA ASI
+
+*/
+
+const
+bForce48minutesDays = 10@
+end
+
+// Mínimo de 128 MB de stream memory
+0A8D: 0@ = read_memory 0x8A5A80 size 4 virtual_protect 0
+if 0@ < 128000000
+then 0A8C: write_memory 0x8A5A80 size 4 value 128000000 virtual_protect 0
+end
+
+wait 0
+wait 500
+
+// Aumentar distância do LOD dos carros
+0A8D: 0@ = read_memory 0x732926 size 4 virtual_protect 1
+0A8D: 0@ = read_memory 0@ size 4 virtual_protect 0
+//if 0@ == 70.0 // default
+//then
+    31@ = 120.0
+    0AC7: 0@ = var 31@ offset
+    0A8C: write_memory 0x732926 size 4 value 0@ virtual_protect 1  
+//end
+
+// Aumentar distância de visão dos carros
+0A8D: 0@ = read_memory 0x732940 size 4 virtual_protect 1
+0A8D: 0@ = read_memory 0@ size 4 virtual_protect 0
+//if 0@ == 150.0 // default
+//then
+    29@ = 150.0
+    0AC7: 0@ = var 29@ offset
+    0A8C: write_memory 0x732940 size 4 value 0@ virtual_protect 1 
+//end
+
+// Aumentar distância de peças dos carros
+0A8D: 0@ = read_memory 0x7328CC size 4 virtual_protect 1
+0A8D: 0@ = read_memory 0@ size 4 virtual_protect 0
+//if 0@ == 20.0 // default
+//then
+    28@ = 80.0
+    0AC7: 0@ = var 28@ offset
+    0A8C: write_memory 0x7328CC size 4 value 0@ virtual_protect 1
+//end      
+
+// Aumentar distância das sombras dos carros
+0A8D: 0@ = read_memory 0x70BEB6 size 4 virtual_protect 1
+0A8D: 0@ = read_memory 0@ size 4 virtual_protect 0
+//if 0@ == 18.0 // default
+//then
+    27@ = 90.0
+    0AC7: 0@ = var 27@ offset
+    0A8C: write_memory 0x70BEB6 size 4 value 0@ virtual_protect 1 
+    0087: 26@ = 27@
+    006B: 26@ *= 26@ //sqr
+    0AC7: 0@ = var 26@ offset
+    0A8C: write_memory 0x70BEA7 size 4 value 0@ virtual_protect 1
+//end
+
+// Aumentar distância das sombras dos peds
+0A8D: 0@ = read_memory 0x8D5240 size 4 virtual_protect 1
+if 0@ == 15.0 // default
+then
+    0@ = 70.0
+    0A8C: write_memory 0x8D5240 size 4 value 0@ virtual_protect 1 
+    006B: 0@ *= 0@ //sqr
+    0A8C: write_memory 0xC4B6B0 size 4 value 0@ virtual_protect 1
+end   
+
+// Desired loaded vehicle models
+0A8D: 0@ = read_memory 0x8A5A84 size 4 virtual_protect 1
+if 0@ == 12 // default
+then 0A8C: write_memory 0x8A5A84 size 4 value 24 virtual_protect 0
+end   
+      
+// Desired loaded vehicle models
+0A8D: 0@ = read_memory 0x40B6AC size 1 virtual_protect 1
+if 0@ == 3 // default
+then 0A8C: write_memory 0x40B6AC size 1 value 5 virtual_protect 1
+end
+
+// Aumentar limite de efeitos de materiais dos carros
+0A8D: 0@ = read_memory 0x5DA08E size 4 virtual_protect 1
+if 0@ == 4096 // default
+then 0A8C: write_memory 0x5DA08E size 4 value 16384 virtual_protect 1
+end                                 
+0A8D: 0@ = read_memory 0x5DA0CA size 4 virtual_protect 1
+if 0@ == 1024 // default
+then 0A8C: write_memory 0x5DA0CA size 4 value 4096 virtual_protect 1
+end                                   
+0A8D: 0@ = read_memory 0x5DA106 size 4 virtual_protect 1
+if 0@ == 4096 // default
+then 0A8C: write_memory 0x5DA106 size 4 value 16384 virtual_protect 1
+end
+
+// Dias com 48 minutos
+0A8D: 0@ = read_memory 0x5BA35F size 4 virtual_protect 1
+if 0@ == 1000 // default
+then 0A8C: write_memory 0x5BA35F size 4 value 2000 virtual_protect 1
+end                        
+0A8D: 0@ = read_memory 0x53BDEC size 4 virtual_protect 1
+if 0@ == 1000 // default
+then 0A8C: write_memory 0x53BDEC size 4 value 2000 virtual_protect 1
+end                       
+0A8D: 0@ = read_memory 0xB7015C size 4 virtual_protect 1
+if 0@ == 1000 // default
+then bForce48minutesDays = true
+else bForce48minutesDays = false
+end
+
+// Desativar tempestade de areia
+0A8C: write_memory 0x72AAE0 size 1 value 0x90 virtual_protect 1
+0A8C: write_memory 0x72AAE1 size 4 value 0x90909090 virtual_protect 1
+
+// Desativar efeito de calor
+0A8C: write_memory 0x72C1B7 size 1 value 0xEB virtual_protect 1
+
+// Desativar carros estacionando
+0A8C: write_memory 0x6B4ABE size 1 value 0xFF virtual_protect 1
+make_nop 0x6B4B8B 5
+
+while true
+    wait 0
+    if bForce48minutesDays == true
+    then 0A8C: write_memory 0xB7015C size 4 value 2000 virtual_protect 0
+    end
+    0@ = 0
+    while 0EA8: get_any_car_no_save_recursive 0@ progress_to 0@ car_to 1@
+        0A97: 1@ = vehicle 1@ struct
+        1@ += 0x42C
+        0A8D: 2@ = read_memory 1@ size 1 virtual_protect 0
+        08C3: clear 2@ bit 2                            
+        08C3: clear 2@ bit 3
+        0A8C: write_memory 1@ size 1 value 2@ virtual_protect 0
+    end
+end

@@ -1,0 +1,2 @@
+Open Limit Adjuster configurado originalmente para o Project2DFX.
+Necessário para o funcionamento do GTA Brasil, e ainda adaptado para o Project2DFX.

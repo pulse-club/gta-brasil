@@ -1,0 +1,4 @@
+503,	hotrinb, 	hotrinb, 	car, 		PRIMO, 	HOTRINB, 	null,	ignore,	10, 	0,	0,		-1, 0.7, 0.7,		0
+
+hotrinb, 1,1, 15,15, 33,33, 13,13, 4,4, 45,45, 30,30, 83,83
+

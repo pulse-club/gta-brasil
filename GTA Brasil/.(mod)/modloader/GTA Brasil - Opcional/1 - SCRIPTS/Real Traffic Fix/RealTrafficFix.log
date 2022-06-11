@@ -1,0 +1,28 @@
+v2.1 beta
+FixGroundStuck = true 
+UseBikeLogicOnBicycles = true 
+NoBicycleHorns = true 
+SlowVehiclesSlowLane = true 
+AvoidVehiclesChangingLane = true 
+TurningSpeedDecrease = 15.000000
+CruiseSpeed = 15.000000
+CruiseMinSpeed = 3.000000
+CruiseMaxSpeed = 30.000000
+FrontMultDist = 50.000000
+SidesSpeedOffsetDiv = 70.000000
+CheckGroundHeight = 1.000000
+FinalGroundHeight = 0.700000
+HeightDiffLimit = 4.000000
+Acceleration = 0.005000
+Desacceleration = 0.010000
+ObstacleSpeedDecrease = 50.000000
+BicycleSpeedMult = 0.500000
+BicycleCruiseMaxSpeed = 10.000000
+BumpSearchRadius = 6.000000
+BumpSearchDistMult = 0.300000
+BumpSpeedDiv = 1.500000
+HornsThreshold = 2000
+BumpModelStart = 15465
+BumpModelEnd = 15473
+SearchBumpFramesDelay = 30
+Bumps is installed and will be checked

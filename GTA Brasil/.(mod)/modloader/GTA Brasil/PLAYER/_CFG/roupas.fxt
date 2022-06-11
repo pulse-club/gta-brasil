@@ -1,0 +1,270 @@
+###################
+###### Lojas ######
+CSCHP Pague Menos
+SHOP1 Pague Menos
+CSSPRT Esporte Center
+SHOP2 Esporte Center
+LACS1 Santo Rock
+SHOP3 Santo Rock
+CLOTHGP Urban Style
+SHOP4 Urban Style
+CSDESGN Nobre Shop
+SHOP5 Nobre Shop
+CSEXL Uniformes e CIA
+SHOP6 Uniformes e CIA
+#
+#
+#
+# Torso
+VESTA Camiseta Lacoste
+VESTWH Camiseta V8 Heart
+TSRTHS1 Camiseta Cobra D'Agua
+TSHIRTC Camiseta Kings
+ONELUV Camiseta One Love
+TSHIRTA Camiseta Nike
+BRAZILI Camiseta Brasilidade
+LACOST2 Camiseta Lacoste 2
+QUIKSIL Camiseta Quiksilver
+DCTSHI1 Camiseta DC Azul
+DCTSHI2 Camiseta DC Preta
+DCTSHI3 Camiseta DC Skate
+PALMEIR Camiseta Palmeiras FC
+SANTOSF Camiseta Santos FC
+CRUZEFC Camiseta Cruzeiro FC
+FLAMEFC Camiseta Flamengo FC
+CORINTF Camiseta Corinthians FC
+INTERNA Camiseta Internacional FC
+GREMIOF Camiseta Gremio FC
+SAMPAFC Camiseta Sao Paulo FC
+ATLETIC Camiseta Atletico MG
+SELECBR Camiseta Sel. Brasileira
+FLUMINE Camiseta Fluminense FC
+CHAPEFC Camiseta Chapecoense FC
+HEATSH1 Camiseta Ramones
+TSHRBO1 Camiseta AC/DC
+TSHRBO2 Camiseta Nirvana
+TSRTSB1 Jaqueta Preta e Azul
+HODMRC1 Jaqueta Seether
+HODBSE1 Camiseta OWSLA
+HODRST1 Manga Longa Kill The Noise
+WCOATA Camiseta Guns N' Roses
+COACHA Camiseta Xadrez Vermelha
+COACHB Camiseta Xadrez Azul
+RSTRSWE Camiseta Xadrez Preta
+BSHIRT Moletom Adidas
+YSHIRT Moletom SkullNade
+GSHIRT Moletom 1Kilo
+SHTBG1 Moletom Rexpeita
+TSHZIP1 Camiseta Sabotage
+TSHZIP2 Camiseta Vans
+HOODB Moletom Damassaclan
+HOODBL Moletom Racionais
+TSHIRTB Camiseta Cobra D'Agua Verde
+TSHRTMG Camiseta Supreme
+BOWLSH1 Camiseta Supreme
+TSRTMGN Camiseta Sadboys 2001
+SPRJCT Camiseta Gucci
+BASKB Regata Blue Sky
+HODJCK1 Jaqueta Nike SB
+SUT1GRY Manga Longa Nike SB
+SUT1BLK Moletom Supreme
+PAINT1 Camiseta RUNSKG
+HAWAI1 Camiseta Oakley
+HAWAI2 Camiseta Ripcurl
+SUIT1 Uniforme de Motoboy
+SUIT3 Terno Roxo
+SLEVB1 Camiseta Chavez
+#
+# Pernas
+BERMAZ Bermuda Azul
+BERMRG Bermuda Cyclone
+BERMPA Bermuda Por do Sol
+BERMPR Bermuda Praiana
+BERMCA Bermuda Caveiras
+BERMFL Bermuda Florida
+BERMES Bermuda Espinhos
+JEANSBL Jeans Azul
+JEANSPR Jeans Preta
+JEANSCZ Jeans Cinza
+TRACKT1 Calúa Adidas Branca
+TRACKT2 Calúa Adidas Camo
+TRACKT3 Calúa Brasil
+TRACKT4 Calúa Nike Azul e Preto
+BOXSRT1 Calúa Nike Cinza
+BOXSRT2 Bermuda Fade
+BOXSRT3 Bermuda Nike Preta
+SHELBOT Bermuda Ciano
+TSRTBA1 Regata 5FDP
+SHORT1 Jeans Preta Rasgada
+SHORT2 Jeans Preta Larga
+CHONG1 Jeans Preta Gangsta
+CHONG2 Jeans Branca
+CHONG3 Jeans Azul Escuro
+CHONG4 Jeans Preta Desbotada
+SHORT3 Jeans Azul Gangsta
+CHINBIE Skinny Azul
+CHINOK Skinny Azul Rasgada
+CUTCHI Skinny Preta Desbotada
+CUTCHBU Skinny Preta
+CHINO3 Skinny Preta Ondulada
+CHINO4 Skinny Azul Escuro
+LEATHA Jeans Folgada Azul
+LEATHB Calúa de Couro Preta
+SUTR1GR Jeans Folgada Desbotada
+SUTR1BL Jeans Folgada Preta
+CUTDENM Jeans Azul Escura
+#
+# Sapatos
+SANDIL3 Chinelo Preto
+SANDIL4 Chinelo Vermelho
+SANDIL5 Chinelo Amarelo
+SANDIL6 Chinelo Azul
+SANDIL7 Chinelo Verde
+COWBOT2 Botas de Cowboy
+SNHEAT3 Nike Air Max
+BSHEAT1 Nike Air Max White
+HITOP Tünis Alto Branco
+PROTRA1 Tünis Vermelho
+PROTRA2 Tünis Azul
+PROTRA3 Tünis Branco
+CHUBLK Converse Preto
+CONBLUE Converse Azul
+CONGREN Converse Vermelho
+SNHEAT1 Vans
+SNHEAT2 Vans Old
+BOXSHO1 Coturno Alto de Couro
+BSHEAT2 Jordan 1 Royal
+TIMBER1 Mizuno Azul
+TIMBER2 Mizuno Vermelho
+TIMBER3 Coturno Marrom
+TIMBER4 Coturno de Aventura
+CONVABE Golf Wang x Converse
+SHOEDR1 Bota de Chuva
+SNKBGAN Oakley O Md 1
+SNKBBLU Nike Air Max 270 Tricolor
+PROTRA1 Springblade Verde
+SHOEDR3 Springblade Azul
+PROTRA2 Springblade Vermelho
+SHOEDR2 Springblade Laranja
+SNKBBLK Adidas Superstar
+PROWHT1 Nike Air Max 270 Verde
+PROBLK1 Nike Air Max 270 Vermelho
+#
+# Correntes
+DOGTAG Crucifixo dourado
+NECKCU1 Colar Prateado
+NECKLS Dente de Dragöo
+STOPWAT Crucifixo de Metal
+NECKSNT S¢mbolo da Paz
+NECKRP2 Colar Çmbar Bòltico
+NECKHA Caveira de Metal
+NECKRP1 Colar de Leöo
+NECKAFR Colar do Flamengo
+# 
+# RelÛgios
+PULSRE Pulseiras Reggae
+WATCH8 Rel¶gio Casio Preto
+WATCH11 Rel¶gio Movado Smart
+WATCH12 Rel¶gio Casio Ouro
+WATCH2 Rolex Dourado
+WATCH5 Rolex Prata
+WATCH9 Rel¶gio Guitarrista
+WATCH10 Rel¶gio Caveiras
+WATCH3 Rel¶gio Casio Prata
+WATCH4 Rel¶gio LED Adidas
+WATCH1 Rel¶gio Xiaomi Smart
+WATCH6 Rel¶gio Esportivo
+#
+# ”culos
+GROUCH1 Visöo Noturna
+GLASS1 Juliet Dourado
+GLASS3 èculos de Grau
+GLASS4 Atitude MMA
+GLASS5 Juliet Vermelho
+GLASS6 èculos Escuros
+GLASS7 Aviador Dourado
+GLASS8 Aviador Preto
+GLASS9 Aviador Verde
+GLASS10 èculos de Sol
+GLASS11 Escuros Moderno
+#
+# ChapÈus
+BANDAN7 Camiseta Amarrada Vermelha
+BANDAN8 Camiseta Amarrada Azul
+BANDAN9 Camiseta Amarrada Verde
+BANDA10 Camiseta Amarrada Preta
+BANDA11 Bandana Amarela
+BANDA12 Bandana Preta
+BANDA13 Bandana Branca
+BANDA14 Bandana Roxa
+BANDA15 Bandana Vermelha Rosto
+BANDA16 Bandana Azul Rosto
+BANDA17 Bandana Verde Rosto
+BANDA18 Bandana Preta Rosto
+CAP46 Bonû Aba Reta Panda
+CAP47 Bonû Polo Branco
+CAP48 Bonû Polo Branco - Atròs
+CAP25 Bucket Gucci
+CAP26 Bonû Diamond
+CAP31 Bonû Compton
+CAP32 Bonû Tican Vermelho
+CAP33 Bonû Verde (Atròs)
+CAP38 Bonû Vermelho (Atròs)
+CAP56 Boina Lateral
+CAP36 Bonû Feed Me
+CAP37 Bonû Watch Dogs
+CAP41 Bonû Compton Aba Reta
+CAP42 Bonû Azul
+CAP57 Touca Preta
+CAP58 Touca Vermelha
+CAP51 Bonû SK Gaming
+CAP52 Bonû Oakley Preto
+CAP34 Bonû Oakley Branco
+CAP28 Chapûu de Palha
+CAP16 Bonû SAMU
+TRIBY1 Capacete Preto
+TRIBY2 Capacete Amarelo e Azul
+CAP27 Capacete Branco
+BOWLER1 Boina da PM
+BOWLER2 Casquete da PM
+BOWLER3 Bonû do Ash
+#
+# Especiais
+POLICE Uniforme PMSP
+PIMPSUT Uniforme PMMG
+PAMEDIC Uniforme SAMU
+#
+#
+#
+#####################
+##### Penteados #####
+HEAD Baixo com barba
+BLHAIR Cabelo Loiro
+REDHAIR Cabelo Vermelho
+BLUHAIR Cabelo Azul
+GRNHAIR Cabelo Verde
+PNKHAIR Cabelo Rosa
+BALD Careca sem barba
+TASH Corte de malandro
+BEARD Careca com barba
+GOATEE Baixo sem barba
+MOHAWK Moicano Preto
+MOHAWKB Moicano Vermelho
+MOHAWKP Moicano Verde
+MOHAKBE Moicano Rosa
+AFROGOT Surfista Loiro s/Barba
+HIGHFAD Surfista Loiro c/Barba
+GROOVE Surfista s/Barba
+TRAMLIN Topete sem Barba
+WEDGE Topete com Barba
+AFROFL Moicano Baixo s/Barba
+JHERI Moicano Baixo c/Barba
+BLADBEA Estiloso sem Barba
+ELVISHA Estiloso com Barba
+CORNROW Alto com Barba
+SLOPE Alto sem Barba
+AFRO Rasta s/Barba
+AFROT Rasta c/Barba
+AFROBL Rasta Loiro s/Barba
+AFROB Rasta Loiro c/Barba
+

@@ -1,0 +1,1 @@
+485, 	baggage,	baggage,	car, 		BAGGAGE,	BAGGAGE, 	null,	ignore,		2, 	0,	0,		-1, 0.6, 0.6,		-1

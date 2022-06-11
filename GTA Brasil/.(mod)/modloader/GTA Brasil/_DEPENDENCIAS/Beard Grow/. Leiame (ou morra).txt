@@ -1,0 +1,52 @@
+  __  __ _      __  __           _     
+ |  \/  (_)    |  \/  |         | | 2019
+ | \  / |___  _| \  / | ___   __| |___ 
+ | |\/| | \ \/ / |\/| |/ _ \ / _` / __|
+ | |  | | |>  <| |  | | (_) | (_| \__ \
+ |_|  |_|_/_/\_\_|  |_|\___/ \__,_|___/
+                                       
+
+=======   MixMods.com.br   ======= - Melhor visualizável em fontes mono-espaçadas, como "Consolas".
+
+
+------- Instruções:
+
+Extraia a pasta "Beard Grow" para a pasta do Modloader.
+
+ Pasta "(adaptação)" inclui adaptações para outros mods de player.
+ Basta pegar o arquivo "beard.txd" e substituir em "modloader/Beard Grow".
+
+-- Download da última versão do Modloader: MixMods.com.br/2015/01/SA-Modloader.html
+
+
+
+ = Primeiro teste:
+Por demorar 4 dias para a barba crescer (por padrão), recomendo que antes de tudo teste o mod com o cheat YSOHNUL/TIMEJUSTFLIESBY
+Você também pode escolher o número de dias no arquivo "BeardGrow.ini".
+Verifique o arquivo "BeardGrow.log" para ver se há mensagens de erro.
+Caso o "beard.txd" que você está usando não seja adaptado ao seu atual player, dará uma mensagem de erro lá.
+
+
+ = Importante:
+Sempre que o penteado é alterado, a barba é considerada cortada.
+Ou seja, mods que alteram o penteado sempre irão "cortar" a barba. Tenha isto em mente.
+
+
+ = Como adaptar:
+Se você deseja adaptar o mod para um player que no momento ele não é compatível, simplesmente abra o arquivo "beard.txd" com Magic.TXD e edite a textura exportando e importando novamente.
+Perceba que é necessário que a textura do rosto do player esteja na mesma resolução da textura da barba.
+Não deixe "semi-pixeis" transparentes na imagem da textura, recorte ela sem suavização de serrilhado, caso contrário o CJ pode aparecer com buracos por volta da barba.
+NÃO adicione compressão e mipmaps na textura do .txd, senão causará crash. A não ser que algum mod futuro deixe isto possível.
+ 
+
+
+Versão: v1.2
+--------------------
+
+Autor: Junior_Djjr
+
+
+====   MixMods.com.br                ====
+====   fb.com/FamiliaMixMods         ====
+====   youtube.com/JuniorDjjrMixMods ====
+

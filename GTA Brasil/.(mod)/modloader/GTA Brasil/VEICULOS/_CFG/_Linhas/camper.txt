@@ -1,0 +1,6 @@
+camper, 1,1
+
+483, 	camper, 	camper, 	car, 		CAMPER, 	CAMPER, 	van,	normal, 	10,	0,	0,		-1, 0.66, 0.66,		-1
+
+carmods
+camper, nto_b_l, nto_b_s, nto_b_tw, exh_b_l, exh_b_m, exh_b_t

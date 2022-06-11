@@ -1,0 +1,2 @@
+604, 	glenshit, 	glenshit, 	car, 		MESA, 	GLENSHI, 	null,	normal, 	1,	0,	0,		-1, 0.8, 0.8,		0
+

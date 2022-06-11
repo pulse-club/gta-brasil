@@ -1,0 +1,4 @@
+Autor: DK22Pac
+Adaptação para GTA VC: ThirteenAG
+Adaptação para SAMP: janglapuk
+Version: Build by Junior_Djjr + path limit fix (fixed)

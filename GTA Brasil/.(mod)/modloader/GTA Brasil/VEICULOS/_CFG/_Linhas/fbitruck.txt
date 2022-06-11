@@ -1,0 +1,8 @@
+vehicle.ide
+528, 	fbitruck, 	fbitruck, 	car, 		FBITRUCK, 	FBITRUK, 	coach,	big,	 	1, 	0,	0,		-1, 0.91, 0.91,		-1
+
+carcols.dat
+fbitruck, 1,1
+
+handling.cfg
+FBITRUCK	6000.0	10000.0	2.0	0.0	0.0	-0.2	85	0.65	0.85	0.54	5	170.0	25.0	25.0	4	D	6.0	0.40	0	30.0	0.8	0.1	0.0	0.30	-0.15	0.5	0.0	0.32	0.16	400000	00004001	00000004	0	1	15

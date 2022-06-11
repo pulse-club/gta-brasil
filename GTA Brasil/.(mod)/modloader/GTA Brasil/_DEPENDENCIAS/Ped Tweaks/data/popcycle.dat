@@ -1,0 +1,727 @@
+// Fore each type of zone (Business, Countryside etc) we have a that controls the ped densities.
+// There is a set of values for each time of the day in 2 hour increments (midnight, 2am, 4 am etc)
+// There are 2 sets of values: Weekday & Weekend.
+// #Peds is the maximum number of peds you can ever have.
+// #Cars is the maximum number of cars you can ever have.
+
+// 4 Values for Dealers Gang Cops Other. These are percentages and are used to take the
+// number of Dealers, gang members etc down during certain times of the day.
+// These numbers do not add up to anything. If they are all 100% you would get the full #Peds.
+
+// A number of values for the different types of peds that are not Dealers, Gang members or cops.
+// This is what is specified as 'Other' in the first 4 values.
+// This number should add up to 100%. If it doesn't the game will scale it to 100% and print a warning.
+
+////////////////////////////////////////////////////////////////////////////////////////
+// BUSINESS
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    3     9     100      100 100  100        0        0       15       0       0       0         0            0               35         35        15      0       0         0       0            0      0         0   // Midnight
+    3     9     100      100 100  100        0        0       15       0       0       0         0            0               35         35        15      0       0         0       0            0      0         0  // 2am
+    3    12     100      100 100  100        0        0       15       0       0       0         0            0               35         35        15      0       0         0       0            0      0         0 // 4am
+    5    12     100      100 100  100        0       80       0        0       0       0         0            20              0          0         0       0       0         0       0            0      0         0 // 6am
+   20    18     100      70  100  100        0       80       0        0       0       0         0            20              0          0         0       0       0         0       0            0      0         0 // 8am
+   15    14     50       70  100  100        0       80       0        0       0       0         0            20              0          0         0       0       0         0       0            0      0         0 // 10am
+   20    18     50       70  100  100        0       80       0        0       0       0         0            20              0          0         0       0       0         0       0            0      0         0 // noon
+   15    14     50       70  100  100        0       60       0        0       0       0         0            20              0          0         0       0       0         0       0            0      0         0 // 2pm
+   15    14     50       70  100  100        0       60       0        0       0       0         0            20              0          0         0       0       0         0       0            0      0         0 // 4pm
+   20    18     50       70  100  100        0       80       0        0       0       0         0            20              0          0         0       0       0         0       0            0      0         0 // 6pm
+   10    12     50       100 100  100        0       80       0        0       0       0         0            20              0          0         0       0       0         0       0            0      0         0 // 8pm
+    5    12     100      100 100  100        0       0        15       0       0       0         0            0               35         35        15      0       0         0       0            0      0         0 // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    3     9     100     100  100  100        0       0        15       0       0       0        0            0                35       35       15       0       0         0       0            0      0           0          // Midnight
+    3     9     100     100  100  100        0       0        15       0       0       0        0            0                35       35       15       0       0         0       0            0      0           0           // 2am
+    3    12     100     100  100  100        0       0        15       0       0       0        0            0                35       35       15       0       0         0       0            0      0           0           // 4am
+    5    12     100     100  100  100        0       80       0        0       0       0        0            20               0        0         0       0       0         0       0            0      0           0          // 6am
+   10    15     100      70  100  100        0       80       0        0       0       0        0            20               0        0         0       0       0         0       0            0      0           0           // 8am
+   10    12     100      70  100  100        0       80       0        0       0       0        0            20               0        0         0       0       0         0       0            0      0           0           // 10am
+   10    15     100      70  100  100        0       80       0        0       0       0        0            20               0        0         0       0       0         0       0            0      0           0           // noon
+   10    12     100      70  100  100        0       80       0        0       0       0        0            20               0        0         0       0       0         0       0            0      0           0           // 2pm
+   10    12     100      70  100  100        0       80       0        0       0       0        0            20               0        0         0       0       0         0       0            0      0           0           // 4pm
+   10    15     100      70  100  100        0       80       0        0       0       0        0            20               0        0         0       0       0         0       0            0      0           0           // 6pm
+    6    12     50      100  100  100        0       80       0        0       0       0        0            20               0        0         0       0       0         0       0            0      0           0           // 8pm
+    5    12     100     100  100  100        0        0       15       0       0       0        0            0                35       35       15       0       0         0       0            0      0           0           // 10pm
+
+////////////////////////////////////////////////////////////////////////////////////////
+// DESERT
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   2     6      100      0  100  100        15      0        0        0       0         0        0            0               0           0         0       0       0         0       0             0     100          0          // Midnight
+   2     6      100      0  100  100        15      0        0        0       0         0        0            0               0           0         0       0       0         0       0             0     100          0          // 2am
+   2     6      100      0  100  100        15      0        0        0       0         0        0            0               0           0         0       0       0         0       0             0     100          0          // 4am
+   2     6      100      0  100  100        15      0        0        0       0         0        0            0               0           0         0       0       0         0       0             0     100          0           // 6am
+   4     6      100      0  100  100        15      0        0        0       0         0        0            0               0           0         0       0       0         0       0             0     100          0           // 8am
+   4     6      50       0  100  100        15      0        0        0       0         0        0            0               0           0         0       0       0         0       0             0     100          0           // 10am
+   4     6      50       0  100  100        15      0        0        0       0         0        0            0               0           0         0       0       0         0       0             0     100          0           // noon
+   4     6      50       0  100  100        15      0        0        0       0         0        0            0               0           0         0       0       0         0       0             0     100          0           // 2pm
+   4     6      50       0  100  100        15      0        0        0       0         0        0            0               0           0         0       0       0         0       0             0     100          0           // 4pm
+   4     6      50       0  100  100        15      0        0        0       0         0        0            0               0           0         0       0       0         0       0             0     100          0           // 6pm
+   4     6      50       0  100  100        15      0        0        0       0         0        0            0               0           0         0       0       0         0       0             0     100          0           // 8pm
+   2     6      100      0  100  100        15      0        0        0       0         0        0            0               0           0         0       0       0         0       0             0     100          0          // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   2     6      100       0  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0             0     100          0         // Midnight
+   2     6      100       0  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0             0     100          0         // 2am
+   2     6      100       0  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0             0     100          0         // 4am
+   2     6      100       0  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0             0     100          0          // 6am
+   4     6      100       0  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0             0     100          0          // 8am
+   4     6      50       0  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0             0     100          0          // 10am
+   4     6      50       0  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0             0     100          0          // noon
+   4     6      50       0  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0             0     100          0          // 2pm
+   4     6      50       0  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0             0     100          0          // 4pm
+   4     6      50       0  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0             0     100          0          // 6pm
+   4     6      50       0  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0             0     100          0          // 8pm
+   2     6      100       0  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0             0     100          0         // 10pm
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// ENTERTAINMENT   - this is used for LA and SF (not lots of entertainers here)
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   20    12     100     100  100  100        0        0       60       0       0          0        0           0                0          20       20       0       0         0        0           0      0          0          // Midnight
+   20    12     100     100  100  100        0        0       70       0       0          0        0           0                0          20       10       0       0         0        0           0      0          0           // 2am
+    8    12     100     100  100  100        0       15       50       0       0          0        0           0                0          25       10       0       0         0        0           0      0          0           // 4am
+    8    12     100     100  100  100        0       30       0        0       0          0       35           35               0          0         0       0       0         0        0           0      0          0            // 6am
+   10    15    100      70  100  100        0       30       0        0       0          0       35           35               0          0         0       0       0         0        0           0      0          0            // 8am
+   15    12     50      70  100  100        0       30       0        0       0          0       35           35               0          0         0       0       0         0        0           0      0          0            // 10am
+   20    15     50      70  100  100        0       30       0        0       0          0       35           35               0          0         0       0       0         0        0           0      0          0            // noon
+   20    15     50      70  100  100        0       30       0        0       0          0       35           35               0          0         0       0       0         0        0           0      0          0            // 2pm
+   15    12     50      70  100  100        0       30       0        0       0          0       35           35               0          0         0       0       0         0        0           0      0          0            // 4pm
+   15    15     50      70  100  100        0       30       0        0       0          0       35           35               0          0         0       0       0         0        0           0      0          0            // 6pm
+   20    15     50     100  100  100        0        0       40       0       0          0       30           30               0          0         0       0       0         0        0           0      0          0             // 8pm
+   20    15    100     100  100  100        0        0       60       0       0          0        0            0               0         20        20       0       0         0        0           0      0          0          // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   20    12    100     100  100  100        0        0       60       0       0          0        0           0                0          20       20       0       0         0        0           0      0          0          // Midnight
+   20    12    100     100  100  100        0        0       70       0       0          0        0           0                0          20       10       0       0         0        0           0      0          0           // 2am
+    8    12    100     100  100  100        0        0       60       0       0          0        0           0                0          25       15       0       0         0        0           0      0          0           // 4am
+    8    12    100     100  100  100        0        0       0        0       0          0       50           50               0          0         0       0       0         0        0           0      0          0            // 6am
+   10    15    100      70  100  100        0        0       0        0       0          0       50           50               0          0         0       0       0         0        0           0      0          0            // 8am
+   15    12     50      70  100  100        0        0       0        0       0          0       50           50               0          0         0       0       0         0        0           0      0          0            // 10am
+   20    15     50      70  100  100        0        0       0        0       0          0       50           50               0          0         0       0       0         0        0           0      0          0            // noon
+   20    15     50      70  100  100        0        0       0        0       0          0       50           50               0          0         0       0       0         0        0           0      0          0            // 2pm
+   15    12     50      70  100  100        0        0       0        0       0          0       50           50               0          0         0       0       0         0        0           0      0          0            // 4pm
+   15    15     50      70  100  100        0        0       0        0       0          0       50           50               0          0         0       0       0         0        0           0      0          0            // 6pm
+   20    15     50     100  100  100        0        0       40       0       0          0       30           30               0          0         0       0       0         0        0           0      0          0             // 8pm
+   20    15    100     100  100  100        0        0       60       0       0          0        0            0               0         20        20       0       0         0        0           0      0          0          // 10pm
+
+////////////////////////////////////////////////////////////////////////////////////////
+// COUNTRYSIDE
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    2    6       0       0  100  100       0       0        0        60      0          0       0            0               10          15        15       0       0         0       0            0      0          0           // Midnight
+    2    6       0       0  100  100       0       0        0        60      0          0       0            0               10          15        15       0       0         0       0            0      0          0           // 2am
+    5    6       0       0  100  100       0       0        0        80      0          0       0            0               10          0         0        0       0         0       0            0      0          0          // 4am
+    5    6       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // 6am
+    5    9       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // 8am
+    5    9       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // 10am
+    5    9       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // noon
+    5    9       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // 2pm
+    5    9       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // 4pm
+    5    6       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // 6pm
+    2    6       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // 8pm
+    2    6       0       0  100  100       0       0        0        60      0          0       0            0               10          15        15       0       0         0       0            0      0          0           // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    3    6       0       0  100  100       0       0        0        50      0          0       0            0               20          20        10       0       0         0       0            0      0          0           // Midnight
+    3    6       0       0  100  100       0       0        0        50      0          0       0            0               20          20        10       0       0         0       0            0      0          0           // 2am
+    5    6       0       0  100  100       0       0        0        50      0          0       0            0               20          20        10       0       0         0       0            0      0          0           // 4am
+    5    6       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // 6am
+    5    9       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // 8am
+    6    9       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // 10am
+    6    9       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // noon
+    6    9       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // 2pm
+    5    9       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // 4pm
+    5    9       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // 6pm
+    3    6       0       0  100  100       0       0        0        80      0          0       0            0               20          0         0        0       0         0       0            0      0          0           // 8pm
+    3    6       0       0  100  100       0       0        0        50      0          0       0            0               20          20        10       0       0         0       0            0      0          0           // 10pm
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// RESIDENTIAL_RICH
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    6    12    100     100  100  100       0        0       0        0       0          0       60            0               0          20        20       0       0         0       0            0      0          0           // Midnight
+    6    12    100     100  100  100       0        0       0        0       0          0       60            0               0          20        20       0       0         0       0            0      0          0           // 2am
+    6    12    100     100  100  100       0        0       0        0       0          0       60            0               0          20        20       0       0         0       0            0      0          0           // 4am
+   10    12    100     100  100  100       0       40       0        0       0          0       60            0               0          0         0        0       0         0       0            0      0          0           // 6am
+   12    12    100      50  100  100       0       40       0        0       0          0       60            0               0          0         0        0       0         0       0            0      0          0           // 8am
+   14    15     50      50  100  100       0       20       0        0       0          0       80            0               0          0         0        0       0         0       0            0      0          0           // 10am
+   14    15     50      50  100  100       0       40       0        0       0          0       60            0               0          0         0        0       0         0       0            0      0          0           // noon
+   14    15     50      50  100  100       0        0       0        0       0          0       80            0               0          0         0        0       0         0       0            0      0          0           // 2pm
+   14    15     50      50  100  100       0       40       0        0       0          0       60            0               0          0         0        0       0         0       0            0      0          0           // 4pm
+   12    14     50      50  100  100       0       40       0        0       0          0       60            0               0          0         0        0       0         0       0            0      0          0           // 6pm
+   10    12     50     100  100  100       0        0       0        0       0          0       65            0               0          15        20       0       0         0       0            0      0          0           // 8pm
+    6    12    100     100  100  100       0        0       0        0       0          0       60            0               0          20        20       0       0         0       0            0      0          0           // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    6    12    100     100  100  100        0        0       0        0       0         0        60            0               0          20         20       0       0         0       0            0      0          0           // Midnight
+    6    12    100     100  100  100        0        0       0        0       0         0        60            0               0          20         20       0       0         0       0            0      0          0           // 2am
+    6    12    100     100  100  100        0        0       0        0       0         0        60            0               0          20         20       0       0         0       0            0      0          0           // 4am
+    8    12    100     100  100  100        0        0       0        0       0         0        100           0               0          0          0        0       0         0       0            0      0          0           // 6am
+    8    12    100      50  100  100        0        0       0        0       0         0        100           0               0          0          0        0       0         0       0            0      0          0           // 8am
+   12    12     50      50  100  100        0        0       0        0       0         0        100           0               0          0          0        0       0         0       0            0      0          0           // 10am
+   15    15     50      50  100  100        0        0       0        0       0         0        100           0               0          0          0        0       0         0       0            0      0          0           // noon
+   15    15     50      50  100  100        0        0       0        0       0         0        100           0               0          0          0        0       0         0       0            0      0          0           // 2pm
+   12    14     50      50  100  100        0        0       0        0       0         0        100           0               0          0          0        0       0         0       0            0      0          0           // 4pm
+   10    14     50      70  100  100        0        0       0        0       0         0        60            0               0          20         20       0       0         0       0            0      0          0            // 6pm
+    6    12     50     100  100  100        0        0       0        0       0         0        60            0               0          20         20       0       0         0       0            0      0          0            // 8pm
+    6    12    100     100  100  100        0        0       0        0       0         0        60            0               0          20         20       0       0         0       0            0      0          0           // 10pm
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// RESIDENTIAL_AVERAGE
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    8    12    100     100  100  100        0        0       0        0       0         0        0            70                0         15        15       0       0         0       0            0      0          0            // Midnight
+    8    12    100     100  100  100        0        0       0        0       0         0        0            70                0         15        15       0       0         0       0            0      0          0            // 2am
+    8    12    100     100  100  100        0        0       0        0       0         0        0            70                0         15        15       0       0         0       0            0      0          0            // 4am
+    8    15    100     100  100  100        0        30      0        0       0         0        0            70                0         0         0        0       0         0       0            0      0          0            // 6am
+   10    15    100      70  100  100        0        30      0        0       0         0        0            70                0         0         0        0       0         0       0            0      0          0            // 8am
+   12    12     50      70  100  100        0        0       0        0       0         0        0            100               0         0         0        0       0         0       0            0      0          0           // 10am
+   15    15     50      70  100  100        0        30      0        0       0         0        0            70                0         0         0        0       0         0       0            0      0          0            // noon
+   15    12     50      70  100  100        0        0       0        0       0         0        0            100               0         0         0        0       0         0       0            0      0          0            // 2pm
+   15    12     50      70  100  100        0        30      0        0       0         0        0            70                0         0         0        0       0         0       0            0      0          0           // 4pm
+   18    15     50      70  100  100        0        30      0        0       0         0        0            70                0         0         0        0       0         0       0            0      0          0            // 6pm
+   18    12     50     100  100  100        0        0       0        0       0         0        0            70                0        15        15        0       0         0       0            0      0          0            // 8pm
+    8    12    100     100  100  100        0        0       0        0       0         0        0            70                0        15        15        0       0         0       0            0      0          0           // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    8    12    100     100  100  100        0        0       10       0       0         0        0            50                0         20        20       0       0         0       0            0      0          0            // Midnight
+    8    12    100     100  100  100        0        0       10       0       0         0        0            50                0         20        20       0       0         0       0            0      0          0            // 2am
+    8    12    100     100  100  100        0        0       0        0       0         0        0            100               0         0         0        0       0         0       0            0      0          0           // 4am
+    8    12    100     100  100  100        0        0       0        0       0         0        0            100               0         0         0        0       0         0       0            0      0          0            // 6am
+   10    14    100      70  100  100        0        0       0        0       0         0        15           85                0         0         0        0       0         0       0            0      0          0            // 8am
+   12    14     50      70  100  100        0        0       0        0       0         0        15           85                0         0         0        0       0         0       0            0      0          0            // 10am
+   15    15     50      70  100  100        0        0       0        0       0         0        0            100               0         0         0        0       0         0       0            0      0          0            // noon
+   15    12     50      70  100  100        0        0       0        0       0         0        0            180               0         0         0        0       0         0       0            0      0          0            // 2pm
+   15    12     50      70  100  100        0        0       0        0       0         0        15           85                0         0         0        0       0         0       0            0      0          0            // 4pm
+   15    15     50      70  100  100        0        0       0        0       0         0        15           85                0         0         0        0       0         0       0            0      0          0            // 6pm
+   12    12     50     100  100  100        0        0       0        0       0         0        0            100               0         0         0        0       0         0       0            0      0          0            // 8pm
+    8    12    100     100  100  100        0        0       10       0       0         0        0             50               0         20        20       0       0         0       0            0      0          0            // 10pm
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// RESIDENTIAL_POOR
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    6    12    100     100  100  100       0        0       0        0       0          0       0            10              50          20        20       0       0         0       0            0      0          0            // Midnight
+    6    12    100     100  100  100       0        0       0        0       0          0       0            10              50          20        20       0       0         0       0            0      0          0            // 2am
+    6    12    100     100  100  100       0        0       0        0       0          0       0            20              60          0         20       0       0         0       0            0      0          0           // 4am
+    6    14    100     100  100  100       0        0       0        0       0          0       0            20              80          0         0        0       0         0       0            0      0          0           // 6am
+   12    15    100      80  100  100       0        0       0        0       0          0       0            20              80          0         0        0       0         0       0            0      0          0         // 8am
+   12    15     50      80  100  100       0        0       0        0       0          0       0            20              60          0         20       0       0         0       0            0      0          0             // 10am
+   16    15     50      80  100  100       0        0       0        0       0          0       0            20              80          0         0        0       0         0       0            0      0          0            // noon
+   12    15     50      80  100  100       0        0       0        0       0          0       0            20              60          0         20       0       0         0       0            0      0          0             // 2pm
+   12    12     50      80  100  100       0        0       0        0       0          0       0            20              60          0         20       0       0         0       0            0      0          0             // 4pm
+   16    15     50      80  100  100       0        0       0        0       0          0       0            20              80          0         0        0       0         0       0            0      0          0            // 6pm
+   12    12    100     100  100  100       0        0       0        0       0          0       0            20              80          0         0        0       0         0       0            0      0          0            // 8pm
+    8    12    100     100  100  100       0        0       0        0       0          0       0            20              60          20        20       0       0         0       0            0      0          0            // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    5    12    100     100  100  100        0        0       0        0       0         0        0            10              60          15        15       0       0         0       0            0      0          0            // Midnight
+    5    12    100     100  100  100        0        0       0        0       0         0        0            10              60          15        15       0       0         0       0            0      0          0            // 2am
+    5    12    100     100  100  100        0        0       0        0       0         0        0            20              80          0         0        0       0         0       0            0      0          0           // 4am
+    5    12    100     100  100  100        0        0       0        0       0         0        0            20              80          0         0        0       0         0       0            0      0          0            // 6am
+   10    15    100      80  100  100        0        0       0        0       0         0        0            20              80          0         0        0       0         0       0            0      0          0            // 8am
+   12    12     50      80  100  100        0        0       0        0       0         0        0            20              80          0         0        0       0         0       0            0      0          0            // 10am
+   16    14     50      80  100  100        0        0       0        0       0         0        0            20              80          0         0        0       0         0       0            0      0          0            // noon
+   12    12     50      80  100  100        0        0       0        0       0         0        0            20              80          0         0        0       0         0       0            0      0          0            // 2pm
+   12    12     50      80  100  100        0        0       0        0       0         0        0            20              50          15        15       0       0         0       0            0      0          0             // 4pm
+   16    15     50      80  100  100        0        0       0        0       0         0        0            20              50          15        15       0       0         0       0            0      0          0             // 6pm
+   16    12    100     100  100  100        0        0       0        0       0         0        0            20              50          15        15       0       0         0       0            0      0          0             // 8pm
+    5    12    100     100  100  100        0        0       0        0       0         0        0            20              50          15        15       0       0         0       0            0      0          0            // 10pm
+
+////////////////////////////////////////////////////////////////////////////////////////
+// GANGLAND
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    8     9     100     100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0            // Midnight
+    8     9     100     100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0            // 2am
+    8     9     100     100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0             // 4am
+    8     9     100     100  100  100       0    	 0    	 0   	  0       0         0        0 			   0               60        20        20       0       0         0       0            0      0          0              // 6am
+    8     9     100     100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0              // 8am
+    8     9     50      100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0              // 10am
+    8     9     50      100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0              // noon
+    8     9     50      100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0              // 2pm
+    8     9     50      100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0               // 4pm
+    8     9     50      100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0              // 6pm
+    8     9     100     100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0              // 8pm
+    8     9     100     100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0            // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    8     9     100     100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0            // Midnight
+    8     9     100     100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0            // 2am
+    8     9     100     100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0             // 4am
+    8     9     100     100  100  100       0    	 0    	 0   	  0       0         0        0 			   0               60        20        20       0       0         0       0            0      0          0              // 6am
+    8     9     100     100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0              // 8am
+    8     9     50      100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0              // 10am
+    8     9     50      100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0              // noon
+    8     9     50      100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0              // 2pm
+    8     9     50      100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0               // 4pm
+    8     9     50      100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0              // 6pm
+    8     9     100     100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0              // 8pm
+    8     9     100     100  100  100       0        0       0        0       0         0        0             0               60        20        20       0       0         0       0            0      0          0            // 10pm
+
+////////////////////////////////////////////////////////////////////////////////////////
+// BEACH
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    5    9     100     100  100  100        0        0       60       0       0         0        0            0               45          25        20       0       0         0       0            0      0          0         // Midnight
+    5    9     100     100  100  100        0        0       60       0       0         0        0            0               45          25        20       0       0         0       0            0      0          0         // 2am
+    5    9     100     100  100  100        0        0       60       0       0         0        0            0               45          25        20       0       0         0       0            0      0          0         // 4am
+    5    9     100     100  100  100        0        0       0        0       65        0        0            35              0           0         0        0       0         0       0            0      0          0          // 6am
+   20    15    100      70  100  100        0        0       0        0       65        0        0            35              0           0         0        0       0         0       0            0      0          0          // 8am
+   20    15     50      70  100  100        0        0       0        0       65        0        0            35              0           0         0        0       0         0       0            0      0          0          // 10am
+   20    15     50      70  100  100        0        0       0        0       65        0        0            35              0           0         0        0       0         0       0            0      0          0          // noon
+   20    15     50      70  100  100        0        0       0        0       65        0        0            35              0           0         0        0       0         0       0            0      0          0          // 2pm
+   20    15     50      70  100  100        0        0       0        0       65        0        0            35              0           0         0        0       0         0       0            0      0          0          // 4pm
+   20    15     50      70  100  100        0        0       0        0       65        0        0            35              0           0         0        0       0         0       0            0      0          0          // 6pm
+    5    9      50     100  100  100        0        0       60       0        0        0        0            20              40          0         0        0       0         0       0            0      0          0          // 8pm
+    5    9     100     100  100  100        0        0       60       0        0        0        0            0               45          25        20       0       0         0       0            0      0          0         // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    8    12    100     100  100  100        0        0       60       0       0         0        0            0               45          25        20       0       0         0       0            0      0          0         // Midnight
+    8    12    100     100  100  100        0        0       60       0       0         0        0            0               45          25        20       0       0         0       0            0      0          0         // 2am
+    8    12    100     100  100  100        0        0       60       0       0         0        0            0               45          25        20       0       0         0       0            0      0          0         // 4am
+    8    12    100     100  100  100        0        0       0        0       65        0        0            35              0           0         0        0       0         0       0            0      0          0          // 6am
+   20    15    100      70  100  100        0        0       0        0       65        0        0            35              0           0         0        0       0         0       0            0      0          0          // 8am
+   20    15     50      70  100  100        0        0       0        0       65        0        0            35              0           0         0        0       0         0       0            0      0          0          // 10am
+   20    15     50      70  100  100        0        0       0        0       65        0        0            35              0           0         0        0       0         0       0            0      0          0          // noon
+   20    15     50      70  100  100        0        0       0        0       65        0        0            35              0           0         0        0       0         0       0            0      0          0          // 2pm
+   20    15     50      70  100  100        0        0       0        0       65        0        0            35              0           0         0        0       0         0       0            0      0          0          // 4pm
+   20    15     50      70  100  100        0        0       0        0       65        0        0            35              0           0         0        0       0         0       0            0      0          0          // 6pm
+   10    12     50     100  100  100        0        0       60       0        0        0        0            20              40          0         0        0       0         0       0            0      0          0          // 8pm
+    8    12    100     100  100  100        0        0       60       0        0        0        0            0               45          25        20       0       0         0       0            0      0          0         // 10pm
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// SHOPPING		- mainly average people shop here 
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   8     12    100     100  100  100        0        0       20       0       0			 0        	0           20               20 		20        20       0       0         0       0            0      0          0          // Midnight
+   8     12    100     100  100  100        0        0       20       0       0          0        	0           20               20         20        20       0       0         0       0            0      0          0          // 2am
+   8     12    100     100  100  100        0        0       20       0       0          0       	0           20               20     	20        20       0       0         0       0            0      0          0          // 4am
+   10    12    100     100  100  100        0       20       0        0       0          0       	0           65               15	       	0         0        0       0         0       0            0      0          0           // 6am
+   15    15    100      70  100  100        0       30       0        0       0          0       	0           70               0  	    0         0        0       0         0       0            0      0          0           // 8am
+   18    12     50      70  100  100        0       30       0        0       0          0       	0           70               0          0         0        0       0         0       0            0      0          0           // 10am
+   18    14     50      70  100  100        0       30       0        0       0          0       	0           70               0          0         0        0       0         0       0            0      0          0           // noon
+   18    12     50      70  100  100        0       30       0        0       0          0       	0           70               0          0         0        0       0         0       0            0      0          0           // 2pm
+   18    12     50      70  100  100        0       30       0        0       0          0       	0           70               0          0         0        0       0         0       0            0      0          0           // 4pm
+   18    15     50      70  100  100        0       30       0        0       0          0       	0           70               0          0         0        0       0         0       0            0      0          0           // 6pm
+   10    12     50     100  100  100        0        0       30       0       0          0       	0           50               20        	0         0        0       0         0       0            0      0          0           // 8pm
+   8     12    100     100  100  100        0        0       15       0       0          0       	0           30               15         15        15       0       0         0       0            0      0          0          // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   8     12    100     100  100  100        0        0       20       0       0			 0        	0           20               20 		20        20       0       0         0       0            0      0          0          // Midnight
+   8     12    100     100  100  100        0        0       20       0       0          0       	0           20               20         20        20       0       0         0       0            0      0          0          // 2am
+   8     12    100     100  100  100        0        0       20       0       0          0       	0           20               20     	20        20       0       0         0       0            0      0          0          // 4am
+   13    12    100     100  100  100        0       20       0        0       0          0       	20          45               15	       	0         0        0       0         0       0            0      0          0           // 6am
+   16    15    100      70  100  100        0       20       0        0       0          0       	20          60               0  	    0         0        0       0         0       0            0      0          0           // 8am
+   20    12     50      70  100  100        0       20       0        0       0          0       	20          60               0          0         0        0       0         0       0            0      0          0           // 10am
+   20    14     50      70  100  100        0       20       0        0       0          0       	20          60               0          0         0        0       0         0       0            0      0          0           // noon
+   20    12     50      70  100  100        0       20       0        0       0          0       	20          60               0          0         0        0       0         0       0            0      0          0           // 2pm
+   20    12     50      70  100  100        0       20       0        0       0          0       	20          60               0          0         0        0       0         0       0            0      0          0           // 4pm
+   20    15     50      70  100  100        0       20       0        0       0          0       	20          60               0          0         0        0       0         0       0            0      0          0           // 6pm
+   14    12     50     100  100  100        0        0       30       0       0          0       	 0          50               20        	0         0        0       0         0       0            0      0          0           // 8pm
+   10    12    100     100  100  100        0        0       20       0       0          0       	 0          30               20         15        15       0       0         0       0            0      0          0          // 10pm
+ 
+////////////////////////////////////////////////////////////////////////////////////////
+// PARK
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   4     12    100     100  100  100       0        0       25       0       0          0       0            0               25          30        20       0       0         0       0            0      0          0          // Midnight
+   4     12    100     100  100  100       0        0       25       0       0          0       0            0               25          30        20       0       0         0       0            0      0          0          // 2am
+   4     12    100     100  100  100       0        0       0        0       0          50      0            0               0           30        20       0       0         0       0            0      0          0         // 4am
+   6     12    100     100  100  100       0       10       0        0       0          50      0            20              20          0         0        0       0         0       0            0      0          0         // 6am
+   8     12    100      70  100  100       0        0       0        0       0          70      0            30              0           0         0        0       0         0       0            0      0          0         // 8am
+   8     12     50      70  100  100       0        0       0        0       0          70      0            30              0           0         0        0       0         0       0            0      0          0         // 10am
+   8     12     50      70  100  100       0        0       0        0       0          70      0            30              0           0         0        0       0         0       0            0      0          0         // noon
+   8     12     50      70  100  100       0        0       0        0       0          70      0            30              0           0         0        0       0         0       0            0      0          0         // 2pm
+   8     12     50      70  100  100       0        0       0        0       0          70      0            30              0           0         0        0       0         0       0            0      0          0         // 4pm
+   8     12     50      70  100  100       0        0       0        0       0          60      0            15              25          0         0        0       0         0       0            0      0          0         // 6pm
+   6     12     50     100  100  100       0       10       0        0       0          0       0            30              30          15        15       0       0         0       0            0      0          0          // 8pm
+   4     12    100     100  100  100       0        0       35       0       0          0       0            0               25          20        20       0       0         0       0            0      0          0          // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   4     12    100     100  100  100       0        0       25       0       0          0       0            0               25          30        20       0       0         0       0            0      0          0          // Midnight
+   4     12    100     100  100  100       0        0       25       0       0          0       0            0               25          30        20       0       0         0       0            0      0          0          // 2am
+   4     12    100     100  100  100       0        0       0        0       0          50      0            0               0           30        20       0       0         0       0            0      0          0         // 4am
+   6     12    100     100  100  100       0       10       0        0       0          50      0            20              20          0         0        0       0         0       0            0      0          0         // 6am
+   8     12    100      70  100  100       0        0       0        0       0          70      0            30              0           0         0        0       0         0       0            0      0          0         // 8am
+   8     12     50      70  100  100       0        0       0        0       0          70      0            30              0           0         0        0       0         0       0            0      0          0         // 10am
+   8     12     50      70  100  100       0        0       0        0       0          70      0            30              0           0         0        0       0         0       0            0      0          0         // noon
+   8     12     50      70  100  100       0        0       0        0       0          70      0            30              0           0         0        0       0         0       0            0      0          0         // 2pm
+   8     12     50      70  100  100       0        0       0        0       0          70      0            30              0           0         0        0       0         0       0            0      0          0         // 4pm
+   8     12     50      70  100  100       0        0       0        0       0          60      0            15              25          0         0        0       0         0       0            0      0          0         // 6pm
+   6     12     50     100  100  100       0       10       0        0       0          0       0            30              30          15        15       0       0         0       0            0      0          0          // 8pm
+   4     12    100     100  100  100       0        0       35       0       0          0       0            0               25          20        20       0       0         0       0            0      0          0          // 10pm
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// INDUSTRY
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   8     12    100     100  100  100        50       0       0       0       0          0       0           0              15            20        15       0       0         0       0            0      0          0         // Midnight
+   8     12    100     100  100  100        50       0       0       0       0          0       0           0              15            20        15       0       0         0       0            0      0          0         // 2am
+   8     12    100     100  100  100        50       0       0       0       0          0       0           0              15            20        15       0       0         0       0            0      0          0         // 4am
+   20    15    100     100  100  100        70       0       0       0       0          0       0           0              30            0         0        0       0         0       0            0      0          0         // 6am
+   20    15    100      70  100  100        75      25       0       0       0          0       0           0               0            0         0        0       0         0       0            0      0          0         // 8am
+   15    12     50      70  100  100        75      25       0       0       0          0       0           0               0            0         0        0       0         0       0            0      0          0         // 10am
+   15    14     50      70  100  100        75      25       0       0       0          0       0           0               0            0         0        0       0         0       0            0      0          0         // noon
+   15    12     50      70  100  100        75      25       0       0       0          0       0           0               0            0         0        0       0         0       0            0      0          0         // 2pm
+   15    12     50      70  100  100        75      25       0       0       0          0       0           0               0            0         0        0       0         0       0            0      0          0         // 4pm
+   20    15     50      70  100  100       100       0       0       0       0          0       0           0               0            0         0        0       0         0       0            0      0          0         // 6pm
+   10    12     50     100  100  100        50       0       0       0       0          0       0           0              15            20        15       0       0         0       0            0      0          0          // 8pm
+   10    12    100     100  100  100        50       0       0       0       0          0       0           0              15            20        15       0       0         0       0            0      0          0         // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   8     12    100     100  100  100        50       0       0       0       0          0       0           0              15            20        15       0       0         0       0            0      0          0         // Midnight
+   8     12    100     100  100  100        50       0       0       0       0          0       0           0              15            20        15       0       0         0       0            0      0          0         // 2am
+   8     12    100     100  100  100        50       0       0       0       0          0       0           0              15            20        15       0       0         0       0            0      0          0         // 4am
+   20    15    100     100  100  100        70       0       0       0       0          0       0           0              30            0         0        0       0         0       0            0      0          0         // 6am
+   20    15    100      70  100  100        75       0       0       0       0          0       0           0              25            0         0        0       0         0       0            0      0          0         // 8am
+   15    12     50      70  100  100        75       0       0       0       0          0       0           0              25            0         0        0       0         0       0            0      0          0         // 10am
+   15    14     50      70  100  100        75       0       0       0       0          0       0           0              25            0         0        0       0         0       0            0      0          0         // noon
+   15    12     50      70  100  100        75       0       0       0       0          0       0           0              25            0         0        0       0         0       0            0      0          0         // 2pm
+   15    12     50      70  100  100        75       0       0       0       0          0       0           0              25            0         0        0       0         0       0            0      0          0         // 4pm
+   20    15     50      70  100  100       100       0       0       0       0          0       0           0               0            0         0        0       0         0       0            0      0          0         // 6pm
+   10    12     50     100  100  100        50       0       0       0       0          0       0           0              15            20        15       0       0         0       0            0      0          0          // 8pm
+   10    12    100     100  100  100        50       0       0       0       0          0       0           0              15            20        15       0       0         0       0            0      0          0         // 10pm
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// ENTERTAINMENT_BUSY	LAS VEGAS (lots of entertainers here)
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   19    15    100     100  100  100       0        0       0        0       0          0       40           20               0          0         0        0       0         0       40           0      0          0          // Midnight
+   19    15    100     100  100  100       0        0       0        0       0          0       40           20               0          0         0        0       0         0       40           0      0          0          // 2am
+   19    15    100     100  100  100       0        0       0        0       0          0       40           20               0          0         0        0       0         0       40           0      0          0          // 4am
+   19    15    100     100  100  100       0       10       0        0       0          0       40           25               0          0         0        0       0         0       25           0      0          0           // 6am
+   19    15    100      70  100  100       0       10       0        0       0          0       40           25               0          0         0        0       0         0       25           0      0          0           // 8am
+   19    15     50      70  100  100       0       10       0        0       0          0       40           25               0          0         0        0       0         0       25           0      0          0           // 10am
+   19    15     50      70  100  100       0       10       0        0       0          0       40           25               0          0         0        0       0         0       25           0      0          0           // noon
+   19    15     50      70  100  100       0       10       0        0       0          0       40           25               0          0         0        0       0         0       25           0      0          0           // 2pm
+   19    15     50      70  100  100       0       10       0        0       0          0       40           25               0          0         0        0       0         0       25           0      0          0           // 4pm
+   19    15     50      70  100  100       0       10       0        0       0          0       40           25               0          0         0        0       0         0       25           0      0          0           // 6pm
+   19    15     50     100  100  100       0        0       0        0       0          0       40           20               0          0         0        0       0         0       40           0      0          0            // 8pm
+   19    15    100     100  100  100       0        0       0        0       0          0       40           20               0          0         0        0       0         0       40           0      0          0          // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   19    15    100     100  100  100       0        0       0        0       0          0       40           20               0          0         0        0       0         0       40           0      0          0          // Midnight
+   19    15    100     100  100  100       0        0       0        0       0          0       40           20               0          0         0        0       0         0       40           0      0          0          // 2am
+   19    15    100     100  100  100       0        0       0        0       0          0       40           20               0          0         0        0       0         0       40           0      0          0          // 4am
+   19    15    100     100  100  100       0       10       0        0       0          0       40           25               0          0         0        0       0         0       25           0      0          0           // 6am
+   19    15    100      70  100  100       0       10       0        0       0          0       40           25               0          0         0        0       0         0       25           0      0          0           // 8am
+   19    15     50      70  100  100       0       10       0        0       0          0       40           25               0          0         0        0       0         0       25           0      0          0           // 10am
+   19    15     50      70  100  100       0       10       0        0       0          0       40           25               0          0         0        0       0         0       25           0      0          0           // noon
+   19    15     50      70  100  100       0       10       0        0       0          0       40           25               0          0         0        0       0         0       25           0      0          0           // 2pm
+   19    15     50      70  100  100       0       10       0        0       0          0       40           25               0          0         0        0       0         0       25           0      0          0           // 4pm
+   19    15     50      70  100  100       0       10       0        0       0          0       40           25               0          0         0        0       0         0       25           0      0          0           // 6pm
+   19    15     50     100  100  100       0        0       0        0       0          0       40           20               0          0         0        0       0         0       40           0      0          0            // 8pm
+   19    15    100     100  100  100       0        0       0        0       0          0       40           20               0          0         0        0       0         0       40           0      0          0          // 10pm
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+// SHOPPING_BUSY  LAS VEGAS
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   18    15    100     100  100  100       0        0       20       0       0          0       15           15               20         15        15       0       0         0       0            0      0          0          // Midnight
+   18    15    100     100  100  100       0        0       20       0       0          0       15           15               20         15        15       0       0         0       0            0      0          0          // 2am
+   18    15    100     100  100  100       0        0       25       0       0          0       15           15               20         15        10       0       0         0       0            0      0          0          // 4am
+   18    15    100     100  100  100       0       15       0        0       0          0       50           30               0          0         0        0       0         0       0            0      0          0           // 6am
+   18    15    100      70  100  100       0       15       0        0       0          0       50           30               0          0         0        0       0         0       0            0      0          0           // 8am
+   18    15     50      70  100  100       0       15       0        0       0          0       50           30               0          0         0        0       0         0       0            0      0          0           // 10am
+   18    15     50      70  100  100       0       15       0        0       0          0       50           30               0          0         0        0       0         0       0            0      0          0           // noon
+   18    15     50      70  100  100       0       15       0        0       0          0       50           30               0          0         0        0       0         0       0            0      0          0           // 2pm
+   18    15     50      70  100  100       0       15       0        0       0          0       50           30               0          0         0        0       0         0       0            0      0          0           // 4pm
+   18    15     50      70  100  100       0       15       0        0       0          0       50           30               0          0         0        0       0         0       0            0      0          0           // 6pm
+   18    15     50     100  100  100       0        0       0        0       0          0       50           30               0          0         0        0       0         0       0            0      0          0           // 8pm
+   18    15    100     100  100  100       0        0       30       0       0          0       15           15               15         15        10       0       0         0       0            0      0          0          // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   18    15    100     100  100  100       0        0       25       0       0          0       15           15              15          15        15       0       0         0       0            0      0          0         // Midnight
+   18    15    100     100  100  100       0        0       25       0       0          0       15           15              15          15        15       0       0         0       0            0      0          0         // 2am
+   18    15    100     100  100  100       0        0       30       0       0          0       15           15              15          15        10       0       0         0       0            0      0          0         // 4am
+   18    15    100     100  100  100       0        10      0        0       0          0       40           40               0          0         0        0       0         0       0            0      0          0           // 6am
+   18    15    100      70  100  100       0        10      0        0       0          0       45           45               0          0         0        0       0         0       0            0      0          0           // 8am
+   18    15     50      70  100  100       0        10      0        0       0          0       45           45               0          0         0        0       0         0       0            0      0          0           // 10am
+   18    15     50      70  100  100       0        10      0        0       0          0       45           45               0          0         0        0       0         0       0            0      0          0           // noon
+   18    15     50      70  100  100       0        10      0        0       0          0       45           45               0          0         0        0       0         0       0            0      0          0           // 2pm
+   18    15     50      70  100  100       0        10      0        0       0          0       45           45               0          0         0        0       0         0       0            0      0          0           // 4pm
+   18    15     50      70  100  100       0        10      0        0       0          0       45           45               0          0         0        0       0         0       0            0      0          0           // 6pm
+   18    15     50     100  100  100       0        0       0        0       0          0       45           45               0          0         0        0       0         0       0            0      0          0           // 8pm
+   18    15    100     100  100  100       0        0       30       0       0          0       15           15              15          15        10       0       0         0       0            0      0          0         // 10pm
+
+////////////////////////////////////////////////////////////////////////////////////////
+// SHOPPING_POSH  only rich people shop here
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    8    12    100     100   70  100       0        0       55       0       0          0       10           0                0          20        15       0       0         0       0            0      0          0          // Midnight
+    8    12    100     100   70  100       0        0       55       0       0          0       10           0                0          20        15       0       0         0       0            0      0          0          // 2am
+   10    12    100     100   70  100       0       30       40       0       0          0       10           0                0          20        0        0       0         0       0            0      0          0          // 4am
+   10    12    100     100  100  100       0       30       10       0       0          0       40           20               0          0         0        0       0         0       0            0      0          0           // 6am
+   15    15    100      70  100  100       0       20       0        0       0          0       60           20               0          0         0        0       0         0       0            0      0          0           // 8am
+   20    15     50      70  100  100       0       20       0        0       0          0       60           20               0          0         0        0       0         0       0            0      0          0           // 10am
+   20    15     50      70  100  100       0       20       0        0       0          0       60           20               0          0         0        0       0         0       0            0      0          0           // noon
+   20    15     50      70  100  100       0       20       0        0       0          0       60           20               0          0         0        0       0         0       0            0      0          0           // 2pm
+   20    15     50      70  100  100       0       20       0        0       0          0       60           20               0          0         0        0       0         0       0            0      0          0           // 4pm
+   20    15     50      70  100  100       0       20       0        0       0          0       60           20               0          0         0        0       0         0       0            0      0          0           // 6pm
+   10    12     50     100   80  100       0       20       0        0       0          0       60           20               0          0         0        0       0         0       0            0      0          0           // 8pm
+    8    12    100     100   80  100       0        0       40       0       0          0       25           0                0          20        15       0       0         0       0            0      0          0          // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    8    12    100     100   70  100       0        0       40       0       0          0       10           0                15         25        10       0       0         0       0            0      0          0          // Midnight
+    8    12    100     100   70  100       0        0       55       0       0          0       10           0                15         15        10       0       0         0       0            0      0          0          // 2am
+   15    12    100     100   70  100       0       30       40       0       0          0       10           0                0          20        0        0       0         0       0            0      0          0          // 4am
+   15    12    100     100  100  100       0       30       10       0       0          0       40           20               0          0         0        0       0         0       0            0      0          0           // 6am
+   20    15    100      70  100  100       0       20       0        0       0          0       60           20               0          0         0        0       0         0       0            0      0          0           // 8am
+   20    12     50      70  100  100       0       20       0        0       0          0       60           20               0          0         0        0       0         0       0            0      0          0           // 10am
+   20    14     50      70  100  100       0       20       0        0       0          0       60           20               0          0         0        0       0         0       0            0      0          0           // noon
+   20    12     50      70  100  100       0       20       0        0       0          0       60           20               0          0         0        0       0         0       0            0      0          0           // 2pm
+   20    12     50      70  100  100       0       20       0        0       0          0       60           20               0          0         0        0       0         0       0            0      0          0           // 4pm
+   20    15     50      70  100  100       0       20       0        0       0          0       60           20               0          0         0        0       0         0       0            0      0          0           // 6pm
+   15    12     50     100   80  100       0       20       0        0       0          0       60           20               0          0         0        0       0         0       0            0      0          0           // 8pm
+    8    12    100     100   80  100       0        0       40       0       0          0       25           0                15         15        10       0       0         0       0            0      0          0          // 10pm
+
+////////////////////////////////////////////////////////////////////////////////////////
+// RESIDENTIAL_RICH_SECLUDED   you mainly see servants around these parts
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    6    6     100       0  100  100       0        0       0       0       0         	 0       10            0                0          0        0        0       90         0       0            0      0          0          // Midnight
+    6    6     100       0  100  100       0        0       0       0       0         	 0       10            0                0          0        0        0       90         0       0            0      0          0          // 2am
+    6    6     100       0  100  100       0        0       0       0       0         	 0       10            0                0          0        0        0       90         0       0            0      0          0          // 4am
+    6    6     100       0  100  100       0        0       0       0       0         	 0       10            0                0          0        0        0       90         0       0            0      0          0           // 6am
+    6    6     100       0  100  100       0        0       0       0       0         	 0       10            0                0          0        0        0       90         0       0            0      0          0           // 8am
+    6    6      50       0  100  100       0        0       0       0       0         	 0       10            0                0          0        0        0       90         0       0            0      0          0           // 10am
+    6    6      50       0  100  100       0        0       0       0       0         	 0       10            0                0          0        0        0       90         0       0            0      0          0           // noon
+    6    6      50       0  100  100       0        0       0       0       0         	 0       10            0                0          0        0        0       90         0       0            0      0          0           // 2pm
+    6    6      50       0  100  100       0        0       0       0       0         	 0       10            0                0          0        0        0       90         0       0            0      0          0           // 4pm
+    6    6      50       0  100  100       0        0       0       0       0         	 0       10            0                0          0        0        0       90         0       0            0      0          0           // 6pm
+    6    6      50       0  100  100       0        0       0       0       0         	 0       10            0                0          0        0        0       90         0       0            0      0          0           // 8pm
+    6    6     100       0  100  100       0        0       0       0       0         	 0       10            0                0          0        0        0       90         0       0            0      0          0          // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other   Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+    5    6     100       0  100  100       0        0       0       0       0          0       	10            0                0          0        0        0       90         0       0            0      0          0          // Midnight
+    5    6     100       0  100  100       0        0       0       0       0          0       	10            0                0          0        0        0       90         0       0            0      0          0          // 2am
+    5    6     100       0  100  100       0        0       0       0       0          0       	10            0                0          0        0        0       90         0       0            0      0          0          // 4am
+    5    6     100       0  100  100       0        0       0       0       0          0       	10            0                0          0        0        0       90         0       0            0      0          0           // 6am
+    5    6     100       0  100  100       0        0       0       0       0          0       	10            0                0          0        0        0       90         0       0            0      0          0           // 8am
+    5    6      50       0  100  100       0        0       0       0       0          0       	10            0                0          0        0        0       90         0       0            0      0          0           // 10am
+    5    6      50       0  100  100       0        0       0       0       0          0       	10            0                0          0        0        0       90         0       0            0      0          0           // noon
+    5    6      50       0  100  100       0        0       0       0       0          0       	10            0                0          0        0        0       90         0       0            0      0          0           // 2pm
+    5    6      50       0  100  100       0        0       0       0       0          0       	10            0                0          0        0        0       90         0       0            0      0          0           // 4pm
+    5    6      50       0  100  100       0        0       0       0       0          0       	10            0                0          0        0        0       90         0       0            0      0          0           // 6pm
+    5    6      50       0  100  100       0        0       0       0       0          0       	10            0                0          0        0        0       90         0       0            0      0          0           // 8pm
+    5    6     100       0  100  100       0        0       0       0       0          0       	10            0                0          0        0        0       90         0       0            0      0          0          // 10pm
+
+////////////////////////////////////////////////////////////////////////////////////////
+// AIRPORT
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other  Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   10    12    100     100  100  100         0       0       0       0       0        0         0           0              35            25        15       0       0        25       0            0      0          0         // Midnight
+   10    12    100     100  100  100         0       0       0       0       0        0         0           0              35            25        15       0       0        25       0            0      0          0         // 2am
+   10    12    100     100  100  100        25       0       0       0       0        0         0           0              20            15        15       0       0        25       0            0      0          0         // 4am
+   15    12    100     100  100  100        35       0       0       0       0        0         0           0              15            0         0        0       0        50       0            0      0          0         // 6am
+   16    12    100      70  100  100        30      20       0       0       0        0         0           0               0            0         0        0       0        50       0            0      0          0         // 8am
+   16    15     50      70  100  100        30      25       0       0       0        0         0           0               0            0         0        0       0        45       0            0      0          0         // 10am
+   16    14     50      70  100  100        30      25       0       0       0        0         0           0               0            0         0        0       0        45       0            0      0          0         // noon
+   16    14     50      70  100  100        30      25       0       0       0        0         0           0               0            0         0        0       0        45       0            0      0          0         // 2pm
+   16    14     50      70  100  100        30      25       0       0       0        0         0           0               0            0         0        0       0        45       0            0      0          0         // 4pm
+   16    15     50      70  100  100        30      25       0       0       0        0         0           0               0            0         0        0       0        45       0            0      0          0         // 6pm
+   10    12     50     100  100  100        15      15       0       0       0        0         0           0              30            0         0        0       0        40       0            0      0          0          // 8pm
+   10    12    100     100  100  100         0       0       0       0       0        0         0           0              50            15        15       0       0        20       0            0      0          0         // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other  Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   10    12    100     100  100  100         0       0       0       0       0        0         0           0              35            25        15       0       0        25       0            0      0          0         // Midnight
+   10    12    100     100  100  100         0       0       0       0       0        0         0           0              35            25        15       0       0        25       0            0      0          0         // 2am
+   10    12    100     100  100  100        25       0       0       0       0        0         0           0              20            15        15       0       0        25       0            0      0          0         // 4am
+   15    12    100     100  100  100        25       0       0       0       0        0         0           20             15            0         0        0       0        40       0            0      0          0         // 6am
+   16    15    100      70  100  100        30       0       0       0       0        0         0           30              0            0         0        0       0        40       0            0      0          0         // 8am
+   16    14     50      70  100  100        30       0       0       0       0        0         0           25              0            0         0        0       0        45       0            0      0          0         // 10am
+   16    14     50      70  100  100        30       0       0       0       0        0         0           25              0            0         0        0       0        45       0            0      0          0         // noon
+   16    14     50      70  100  100        30       0       0       0       0        0         0           25              0            0         0        0       0        45       0            0      0          0         // 2pm
+   16    14     50      70  100  100        30       0       0       0       0        0         0           25              0            0         0        0       0        45       0            0      0          0         // 4pm
+   16    15     50      70  100  100        30       0       0       0       0        0         0           25              0            0         0        0       0        45       0            0      0          0         // 6pm
+   10    12     50     100  100  100        15       0       0       0       0        0         0           15             30            0         0        0       0        40       0            0      0          0          // 8pm
+   10    12    100     100  100  100         0       0       0       0       0        0         0           0              50            15        15       0       0        20       0            0      0          0         // 10pm
+
+////////////////////////////////////////////////////////////////////////////////////////
+// GOLF_CLUB
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other  Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   0    0       0       0    0  100       0         0      0       0       0         0       	 0    		 0				0	   	0			0	  100		0		0			0			0			0          0    // Midnight
+   0    0       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0	   	0			0	  100		0		0			0			0			0          0	// 2am
+   0    0       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0	    0			0	  100		0		0			0			0			0          0    // 4am
+   2    2       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0          0     // 6am
+   4    4       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0          0     // 8am
+   4    4       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0          0     // 10am
+   4    4       0       0    0  100       0         0      0       0       0         0        	 0       	 0       		0		0			0	  100		0		0			0			0			0          0     // noon
+   4    4       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0          0     // 2pm
+   4    4       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0          0     // 4pm
+   4    4       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0          0     // 6pm
+   4    3       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0          0     // 8pm
+   2    0       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0          0   // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other  Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   0    0       0       0    0  100       0         0      0       0       0         0       	 0    		 0				0	   	0			0	  100		0		0			0			0			0       0    // Midnight
+   0    0       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0	   	0			0	  100		0		0			0			0			0       0			// 2am
+   0    0       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0	    0			0	  100		0		0			0			0			0       0    // 4am
+   4    3       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0       0     // 6am
+   8    4       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0       0     // 8am
+   8    5       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0       0     // 10am
+   8    5       0       0    0  100       0         0      0       0       0         0        	 0       	 0       		0		0			0	  100		0		0			0			0			0       0     // noon
+   8    5       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0       0     // 2pm
+   8    5       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0       0     // 4pm
+   8    5       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0       0     // 6pm
+   8    5       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0       0     // 8pm
+   8    4       0       0    0  100       0         0      0       0       0         0        	 0       	 0        		0		0			0	  100		0		0			0			0			0       0   // 10pm
+
+////////////////////////////////////////////////////////////////////////////////////////
+// OUT_OF_TOWN_FACTORY
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   2     6       0       0    0  100         0      0        0        0       0         0        0            0               0           0         0       0       0         0       0           100       0          0          // Midnight
+   2     6       0       0    0  100         0      0        0        0       0         0        0            0               0           0         0       0       0         0       0           100       0          0          // 2am
+   2     6       0       0    0  100         0      0        0        0       0         0        0            0               0           0         0       0       0         0       0           100       0          0          // 4am
+   2     6       0       0    0  100         0      0        0        0       0         0        0            0               0           0         0       0       0         0       0           100       0          0           // 6am
+   4     6       0       0    0  100         0      0        0        0       0         0        0            0               0           0         0       0       0         0       0           100       0          0           // 8am
+   4     6       0       0    0  100         0      0        0        0       0         0        0            0               0           0         0       0       0         0       0           100	     0          0           // 10am
+   4     6       0       0    0  100         0      0        0        0       0         0        0            0               0           0         0       0       0         0       0           100       0          0           // noon
+   4     6       0       0    0  100         0      0        0        0       0         0        0            0               0           0         0       0       0         0       0           100       0          0           // 2pm
+   4     6       0       0    0  100         0      0        0        0       0         0        0            0               0           0         0       0       0         0       0           100       0          0           // 4pm
+   4     6       0       0    0  100         0      0        0        0       0         0        0            0               0           0         0       0       0         0       0           100       0          0           // 6pm
+   4     6       0       0    0  100         0      0        0        0       0         0        0            0               0           0         0       0       0         0       0           100       0          0           // 8pm
+   2     6       0       0    0  100         0      0        0        0       0         0        0            0               0           0         0       0       0         0       0           100       0          0          // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other     Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   2     5     100     100  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0           100       0          0         // Midnight
+   2     5     100     100  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0           100       0          0         // 2am
+   2     5     100     100  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0           100       0          0         // 4am
+   2     5     100     100  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0           100       0          0          // 6am
+   4     5     100      50  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0           100       0          0          // 8am
+   4     5      50      50  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0           100       0          0          // 10am
+   4     5      50      50  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0           100       0          0          // noon
+   4     5      50      50  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0           100       0          0          // 2pm
+   4     5      50      50  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0           100       0          0          // 4pm
+   4     5      50      70  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0           100       0          0          // 6pm
+   4     5      50     100  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0           100       0          0          // 8pm
+   2     5     100     100  100  100        0       0        0        0       0         0        0           0               0            0         0       0       0         0       0           100       0          0         // 10pm
+
+////////////////////////////////////////////////////////////////////////////////////////
+// AIRPORT_RUNWAY
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekday
+//
+// #Peds #Cars Dealers Gang Cops Other  Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // Midnight
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 2am
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 4am
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 6am
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 8am
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 10am
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // noon
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 2pm
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 4pm
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 6pm
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100          // 8pm
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 10pm
+////////////////////////////////////////////////////////////////////////////////////////
+// Weekend
+//
+// #Peds #Cars Dealers Gang Cops Other  Workers Business Clubbers Farmers BeachFolk Parkfolk Casual_Rich Casual_Average Casual_Poor Prozzies Crimimals Golfers Servants Aircrew Entertainers oot_fact Desertfolk Aircrew_runway
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // Midnight
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 2am
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 4am
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 6am
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 8am
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 10am
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // noon
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 2pm
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 4pm
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 6pm
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100          // 8pm
+   2     3       0       0    0  100         0       0       0       0       0        0         0           0               0            0         0        0       0        0      0            0      0       100         // 10pm
+		
+		
+ 

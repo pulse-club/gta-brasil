@@ -1,0 +1,2 @@
+PT: Se você quer remover o skate do jogo, remova a entrada "sktbd" do cargrp.dat trocando para outra coisa, como "bmx".
+EN: If you want to remove the skateboard from the game, remove the "sktbd" entry from cargrp.dat by switching to something else, such as "bmx".

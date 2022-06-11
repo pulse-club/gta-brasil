@@ -1,0 +1,26 @@
+# Corrigido, convertido e adaptado por Junior_Djjr
+objs
+12373, bairro1a, bairro1a, 299, 0
+12374, bairro1a_alpha, bairro1a_alpha, 299, 2097284
+12375, bairro1b, bairro1b, 299, 0
+12376, bairro1b_alpha, bairro1b_alpha, 299, 2097284
+12377, bairro1c, bairro1c, 299, 0
+12378, bairro1c_alpha, bairro1c_alpha, 299, 2097284
+12379, bairro1d, bairro1d, 299, 0
+12380, bairro1d_alpha, bairro1d_alpha, 299, 2097284
+12381, bairro1d_tprops, bairro1d_tprops, 80, 0
+12382, bairro1d_tgarage, bairro1d, 299, 0
+12387, bairro1_wires_1, bairro1_wires, 299, 2097284
+12388, bairro1_wires_2, bairro1_wires, 299, 2097284
+end
+
+txdp
+bairro1a, bairro1
+bairro1a_alpha, bairro1
+bairro1b, bairro1
+bairro1b_alpha, bairro1
+bairro1c, bairro1
+bairro1c_alpha, bairro1
+bairro1d, bairro1
+bairro1d_alpha, bairro1
+end

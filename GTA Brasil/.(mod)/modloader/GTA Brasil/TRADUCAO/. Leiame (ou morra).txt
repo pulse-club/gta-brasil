@@ -1,0 +1,52 @@
+  __  __ _      __  __           _     
+ |  \/  (_)    |  \/  |         | | 2021
+ | \  / |___  _| \  / | ___   __| |___ 
+ | |\/| | \ \/ / |\/| |/ _ \ / _` / __|
+ | |  | | |>  <| |  | | (_) | (_| \__ \
+ |_|  |_|_/_/\_\_|  |_|\___/ \__,_|___/
+                                       
+
+=======   MixMods.com.br   ======= - Melhor visualizável com fontes mono-espaçadas, como "Consolas".
+
+
+------- Instruções:
+
+Extraia a pasta "Tradução" para dentro do Modloader.
+
+Se seu monitor não é widescreen, em seguida faça o mesmo com o conteúdo da pasta "(não-widescreen)", substituindo.
+
+-- Download da última versão do Modloader: MixMods.com.br/2015/01/SA-Modloader.html
+-- Se você ainda não modifica o jogo, você pode preferir baixar o Essentials Pack: MixMods.com.br/2019/08/Essentials.html
+
+
+Caso a fonte das letras fique com trema (¨) em vez de til (~):
+É porque você tem outro mod de fonte instalado (fonts.txd) no ModLoader.
+Desinstale o outro ou aumente a prioridade deste mod no modloader.ini:
+https://mixmods.com.br/2015/07/tutorial-dicas-tudo-sobre-mod-loader.html#Priority
+
+Esta tradução também substitui outros arquivos de interface (que inclui loadscreens em HD).
+E mesmo alguns arquivos do mapa (como lista de carros procurados).
+Se você tem outro mod que substitua os mesmos arquivos, não fará diferença ou substituirá eles.
+Você pode escolher não instalar tais arquivos txd (exceto fonts.txd), ou ajustar a prioridade da pasta no modloader.ini.
+
+
+
+ATIVE AS LEGENDAS NO MENU DE OPÇÕES DO JOGO!!!
+
+
+Versão: v1.2 build 35 (14/05/21)
+(2016, revisada por Junior_Djjr de 2017 até 2021)
+--------------------
+
+--- Autores:
+
+Tradução base: Afrânio Bezerra de Souza (Gamevicio), MJay/MJarcos (Tribo Gamer)
+Revisores: MJay/MJarcos, Junior_Djjr (MixMods), Carinha do GTA
+Edição de imagem: MJay/MJarcos, Junior_Djjr
+LOADSCS.txd HD: mgtaiv, Magic_Al
+Mais créditos no "Leia-me (créditos).txt"
+
+
+====   MixMods.com.br         ====
+====   fb.com/FamiliaMixMods  ====
+

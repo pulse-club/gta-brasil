@@ -1,0 +1,35 @@
+  __  __ _      __  __           _     
+ |  \/  (_)    |  \/  |         | | 2018
+ | \  / |___  _| \  / | ___   __| |___ 
+ | |\/| | \ \/ / |\/| |/ _ \ / _` / __|
+ | |  | | |>  <| |  | | (_) | (_| \__ \
+ |_|  |_|_/_/\_\_|  |_|\___/ \__,_|___/
+                                       
+
+=======   MixMods.com.br   ======= - Melhor visualizável no bloco de notas com fontes mono-espaçadas, como "Consolas".
+
+
+------- Instruções:
+
+Extraia os arquivos para alguma pasta dentro do Modloader. Ou se preferir para a pasta do seu GTA SA.
+
+ Opcional: A pasta "Confg Máxima - Max settings" inclui uma configuração máxima, onde basta abrir o .exe que o jogo se abrirá sem nenhum menu etc (a partir da segunda vez).
+
+-- Download da última versão do Modloader: MixMods.com.br/2015/01/SA-Modloader.html
+
+
+
+ DETALHES:
+    Na primeira vez que você abrir o jogo, irá pedir pra carregar um save game... na próxima vez que você abrir não vai pedir mais. Portanto se você quiser trocar o save game, carregue um outro save (Load Game) dentro do jogo para trocar.
+    Para você desativar o auto load de save game, você pode segurar CTRL quando o jogo começar a abrir, assim irá aparecer o menu de load game/start game.
+    Leia mais o .ini para conhecer mais opções
+
+
+
+--------------------
+
+Autor: LINK/2012
+
+
+====   MixMods.com.br         ====
+====   fb.com/FamiliaMixMods  ====

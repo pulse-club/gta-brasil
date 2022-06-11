@@ -1,0 +1,8 @@
+= MW Project (mais água por SA)
+Origem: https://www.mixmods.com.br/2019/07/mw-project-mais-agua.html
+
+Código: Scop (Samuel Macena)
+Modelo: MaxHeadRooM_ (Marcelo Forte)
+Água na bacia em East Los Santos: Sanya1990
+
+Arquivos incluem: water.dat, sfw_stream0.ipl, amublokalpha_lan2.dff, ce_safeground.dff, cehillhse14.dff, santahouse05_law2.dff, spray01_lawn.dff, sunset18_lawn.dff, venlaw_grnd.dff, lahills_4.col, lan2_2.col, lawn_4.col, laxref.col

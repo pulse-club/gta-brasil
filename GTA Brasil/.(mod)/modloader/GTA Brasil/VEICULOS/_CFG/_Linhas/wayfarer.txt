@@ -1,0 +1,11 @@
+HANDLING TAMBÉM USADO PARA PIZZABOY
+
+handling.cfg
+WAYFARER	800.0	600.0	4.0	0.0	0.1	0.0	103	1.4	0.85	0.48	4	190.0	40.0	5.0	R	P	10.0	0.55	0	35.0	0.65	0.20	0.0	0.09	-0.11	0.55	0.0	0.0	0.24	6000	41000000	0	1	1	7
+!	WAYFARER	0.10	0.05	0.20	0.05	30.0	25.0	0.945	1.20	0.7		0.1		33.0	-55.0	-0.006	0.4		0.3
+
+vehicles.ide
+586,	wayfarer	wayfarer,	bike,		WAYFARER,	WAYFARE,	biked, motorbike,	8,	0,	0,		23, 0.654, 0.654,	-1
+
+carcols.dat
+wayfarer, 33,33, 3,33, 3,0, 0,33, 1,33, 0,3, 85,33, 79,0

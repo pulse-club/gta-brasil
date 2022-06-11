@@ -1,0 +1,1 @@
+605,	sadlshit,	sadlshit,	car, 		MESA,	 	SADLSHI, 	null,	worker, 	2,	0,	0,		-1, 0.8, 0.8,		0

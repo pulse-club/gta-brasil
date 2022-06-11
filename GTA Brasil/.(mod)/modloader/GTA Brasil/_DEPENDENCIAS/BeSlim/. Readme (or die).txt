@@ -1,0 +1,34 @@
+  __  __ _      __  __           _     
+ |  \/  (_)    |  \/  |         | | 2019
+ | \  / |___  _| \  / | ___   __| |___ 
+ | |\/| | \ \/ / |\/| |/ _ \ / _` / __|
+ | |  | | |>  <| |  | | (_) | (_| \__ \
+ |_|  |_|_/_/\_\_|  |_|\___/ \__,_|___/
+                                       
+
+=======   MixMods.com.br   ======= - Best visualization with monospaced fonts, like "Consolas".
+
+
+------- Instructions:
+
+Extract the folder "BeSlim" to your Modloader folder.
+
+-- Download the latest version of Modloader: MixMods.com.br/2015/01/SA-Modloader.html
+
+
+
+ By default the mod will disable everything (but muscle texture continues).
+ You may want to edit the .ini file to leave it to your liking and need.
+ 
+
+
+Version: v2.0
+--------------------
+
+Author: Junior_Djjr
+
+
+====   MixMods.com.br                ====
+====   fb.com/FamiliaMixMods         ====
+====   youtube.com/JuniorDjjrMixMods ====
+

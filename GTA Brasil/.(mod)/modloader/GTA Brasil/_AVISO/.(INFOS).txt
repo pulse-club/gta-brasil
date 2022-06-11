@@ -1,0 +1,7 @@
+PT: Este script mostra uma mensagem de texto na tela avisando que esta versão do jogo ainda está em desenvolvimento.
+    Você, tendo noção disso, pode removê-lo, mas peçamos que não publique vídeos e imagens sem esta mensagem!
+    Principalmente se você tem influência.
+
+EN: This script shows a text message on the screen telling you that this version of the game is still in development.
+    You, being aware of this, can remove it, but let us ask you not to post videos and images without this message!
+    Especially if you have influence.

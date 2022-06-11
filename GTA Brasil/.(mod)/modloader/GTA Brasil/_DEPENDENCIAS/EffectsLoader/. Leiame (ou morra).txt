@@ -1,0 +1,44 @@
+  __  __ _      __  __           _     
+ |  \/  (_)    |  \/  |         | | BMS
+ | \  / |___  _| \  / | ___   __| |___ 
+ | |\/| | \ \/ / |\/| |/ _ \ / _` / __|
+ | |  | | |>  <| |  | | (_) | (_| \__ \
+ |_|  |_|_/_/\_\_|  |_|\___/ \__,_|___/
+                                       
+
+=======   MixMods.com.br   ======= - Melhor visualizável no bloco de notas com fontes mono-espaçadas, como "Lucida Console".
+
+
+------- Instruções:
+
+Extraia o arquivo "EffectLoader.asi" para alguma pasta dentro do Modloader. Ou se preferir para a pasta do seu GTA SA.
+
+-- Download da última versão do Modloader: MixMods.com.br/2015/01/SA-Modloader.html
+
+ 
+
+ -- Como instalar novos efeitos especiais (fxs):
+Novos efeitos são instalados na pasta "models\effects\". ESTA PASTA NÃO PODE ESTAR DENTRO DO MODLOADER, atualmente só funciona fora dele.
+Quando você baixar algum mod com este tipo de instalação de efeitos, é só colocar a pasta do efeito dentro desta pasta (ficando por exemplo "models\effects\prt_blood")
+
+
+ -- Exemplo:
+Dentro da pasta "(exemplo - example)" há um exemplo de uso, basta você extrair a pasta "models" dela para a pasta do seu GTA SA e testar.
+Irá mudar o efeito de sangue quando atira num ped por um efeito do Overdose Effects do Function-X-.
+
+
+ -- Detalhe técnico:
+Se você quer saber como adaptar efeitos para este tipo de instalação: O funcionamento é por um arquivo de texto (que pode ser aberto com algum editor de texto) em extensão .fxs, onde o conteúdo do arquivo é simplesmente a seção do efeito efeito especial como visto dentro do effects.fxp. É bem auto-explicativo.
+Na mesma pasta, coloque as texturas necessárias para o efeito funcionar. Pode ser em .png, ou .dds com DXT1/3/5.
+
+
+
+Versão: v1.1
+--------------------
+
+Autor: DK22Pac
+
+
+====   MixMods.com.br         ====
+====   fb.com/FamiliaMixMods  ====
+

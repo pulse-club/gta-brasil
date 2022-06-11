@@ -1,0 +1,5 @@
+COLFILE 0 DATA\MAPS\br_transito.COL
+
+IDE DATA\MAPS\TC_Transito.IDE
+IPL DATA\MAPS\TC_Transito.IPL
+

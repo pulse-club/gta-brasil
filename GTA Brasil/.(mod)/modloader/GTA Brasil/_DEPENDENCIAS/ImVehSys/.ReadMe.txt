@@ -1,0 +1,13 @@
+ImVehSys v1.0
+--------------------
+Author: PRK99
+--------------------
+NEED:
+ASI Loader
+--------------------
+INSTALL:
+Move the "ImVehSys.asi" and "ImVehSys.ini" files to main folder of your game or move the ImVehSys folder to inside of the modloader folder.
+--------------------
+See the funtions list in Change.log
+--------------------
+https://central-mods.blogspot.com/

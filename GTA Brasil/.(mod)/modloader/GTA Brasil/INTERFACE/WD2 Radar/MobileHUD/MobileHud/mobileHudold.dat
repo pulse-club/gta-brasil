@@ -1,0 +1,96 @@
+# Mobile HUD settings
+
+ENABLE_COLORS                           YES   
+ENABLE_PLAYER_INFO                      YES   
+ENABLE_RADAR                            YES    
+ENABLE_SUBTITLES                        YES     
+ENABLE_RADIO_NAMES                      YES   
+ENABLE_AREA_NAMES                       YES   
+ENABLE_VEHICLE_NAMES                    YES   
+ENABLE_STATS_BOX                        YES   
+ENABLE_TEXT_BOX                         YES   
+ENABLE_TIMERS                           YES     
+ENABLE_PROGRESS_BARS                    YES   
+ENABLE_MENU_SYSTEM                      YES   
+ENABLE_LOADING_SCREENS                  NO  
+ENABLE_MENU_PAGES                       NO       
+ENABLE_FRONTEND                         NO     
+
+RADAR_TOP                               NO
+
+WEAPON_ICON_POSN                        1574.0 610.0
+WEAPON_ICON_SCALE                       50.0 50.0
+WEAPON_AMMO_POSN                        1550.0  597.0
+WEAPON_AMMO_SCALE                       0.3   0.7
+CLOCK_POSN                              1483.0 615.0
+CLOCK_SCALE                             0.3   0.7
+MONEY_POSN                              1390.0 615.0
+MONEY_SCALE                             0.3   0.7
+HEALTH_POSN                             1390.0 632.0
+HEALTH_SCALE                            126.0 9.0
+ARMOR_POSN                              1390.0 645.0
+ARMOR_SCALE                             126.0 9.0
+BREATH_POSN                             1390.0 602.0
+BREATH_SCALE                            126.0 9.0
+WANTED_LEVEL_POSN                       1385.0  860.0
+WANTED_LEVEL_STAR_SCALE                 0.4   0.9
+WANTED_LEVEL_STAR_SPACE                 16.0
+
+SECOND_PLAYER_OFFSET_Y                  -190.0
+
+RADAR_POSN                              120.0 140.0
+RADAR_WIDTH_HALF                        93.0
+RADAR_HEIGHT_HALF                       93.0
+RADAR_BORDER_WIDTH_HALF                 96.0
+RADAR_BORDER_HEIGHT_HALF                96.0
+PLANE_RADAR_POSN                        232.0 47.0
+PLANE_RADAR_SIZE                        14.0  145.0
+PLANE_RADAR_LIGHT_PART_POSN             235.0 50.0
+PLANE_RADAR_LIGHT_PART_SIZE             8.0   139.0
+
+RADIO_NAME_TOP                          YES
+RADIO_NAME_TOP_POSN_Y                   5.0
+RADIO_NAME_POSN                         20.0  37.0
+RADIO_NAME_SCALE                        0.8   1.5
+
+TEXT_BOX_POSN                           25.0  40.0
+TEXT_BOX_POSN_X_WITH_RADAR              231.0
+TEXT_BOX_POSN_X_WITH_RADAR_AND_PLANE    259.0            
+TEXT_BOX_FONT_SCALE                     0.8 1.5
+TEXT_BOX_WIDTH                          421.0
+TEXT_BOX_BORDER_SIZE                    -5.0
+TEXT_BOX_PROGRESS_BAR_SIZE              100.0 20.0
+TEXT_BOX_PROGRESS_BAR_Y_SHIFT           3.0
+TEXT_BOX_WIDTH_WITH_PROGRESS_BAR        164.0
+TEXT_BOX_PLUS_MIN_TEXT_X_SHIFT          115.0
+TEXT_BOX_TEXT_POSN_WHEN_MENU_ENABLED    18.0 10.0
+TEXT_BOX_HEIGHT_WHEN_MENU_ENABLED       55.0
+
+MISSIONTIMERS_TOP                       YES
+MISSIONTIMERS_TOP_POSN_Y                36.0
+MISSIONTIMERS_BOX_POSN_X                20.0
+MISSIONTIMERS_BOX_POSN_MIN_Y            230.0
+MISSIONTIMERS_BOX_POSN_MIN_Y_2P         380.0
+MISSIONTIMERS_BOX_SIZE                  240.0 37.0
+MISSIONTIMERS_TEXT_SCALE                0.7   1.3
+MISSIONTIMERS_TEXT_MAX_WIDTH            128.0
+MISSIONTIMERS_TEXT_OFFSET_Y             6.0
+MISSIONTIMERS_TEXT_DESCRIPTION_OFFSET_X 8.0
+MISSIONTIMERS_TEXT_VALUE_OFFSET_X       8.0
+MISSIONTIMERS_PROGRESSBAR_OFFSET        6.0   11.0
+MISSIONTIMERS_PROGRESSBAR_SIZE          92.0  18.0
+
+SUBTITLES_POSN_Y                        60.0
+SUBTITLES_WIDESCREEN_POSN_Y             5.0
+SUBTITLES_SCALE                         1.0   1.9
+
+AREA_NAME_POSN                          23.0  885.0
+AREA_NAME_SCALE                         1.1   2.1
+
+VEHICLE_NAME_POSN                       23.0  25.0
+VEHICLE_NAME_SCALE                      0.5   0.9
+
+STATS_BOX_POSN                          10.0  10.0
+
+# YES (enable), NO (disable), or VirtualKey number (9 for TAB) to reload when key is pressed
+RELOAD_SETTINGS                         YES

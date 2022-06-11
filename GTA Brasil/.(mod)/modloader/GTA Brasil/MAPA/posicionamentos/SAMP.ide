@@ -1,0 +1,19 @@
+objs
+11729, GymLockerClosed1, intring_gymint3, 50, 0
+18633, GTASAWrench1, MatTextures, 100, 0
+18634, GTASACrowbar1, MatTextures, 100, 0
+19622, Broom1, Broom1, 100, 0
+19621, OilCan1, OilCan1, 100, 0
+19815, ToolBoard1, ToolBoard1, 50, 0
+19816, OxygenCylinder1, OxygenCylinder1, 50, 0
+19817, CarFixerRamp1, CarFixerRamp1, 100, 2097152
+19812, BeerKeg1, ce_breweryref, 100, 0
+19872, CarFixerRamp2, CarFixerRamp1, 100, 2097152
+19917, CutsceneEngine1, csengine, 50, 0
+19893, LaptopSAMP1, LaptopSAMP1, 50, 0
+19903, MechanicComputer1, hubprops2_sfse, 50, 4
+19900, ToolCabinet2, hubprops2_sfse, 50, 0
+19898, OilFloorStain1, hubprops1_sfse, 50, 2097156
+19899, ToolCabinet1, hubprops2_sfse, 50, 2097152
+12505, wheelprop, CJ_street_Props, 100, 0
+end

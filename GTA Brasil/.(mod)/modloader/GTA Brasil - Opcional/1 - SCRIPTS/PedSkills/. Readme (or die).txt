@@ -1,0 +1,36 @@
+  __  __ _      __  __           _     
+ |  \/  (_)    |  \/  |         | | 2020
+ | \  / |___  _| \  / | ___   __| |___ 
+ | |\/| | \ \/ / |\/| |/ _ \ / _` / __|
+ | |  | | |>  <| |  | | (_) | (_| \__ \
+ |_|  |_|_/_/\_\_|  |_|\___/ \__,_|___/
+                                       
+
+=======   MixMods.com.br   ======= - Best visualization with monospaced fonts, like "Consolas".
+
+
+------- Instructions:
+
+Extract the folder "PedSkills" to your Modloader folder.
+
+-- Download the latest version of Modloader: MixMods.com.br/2015/01/SA-Modloader.html
+
+
+ It's already configured with a configuration (.ini) that makes the game a little more difficult.
+ Check other options in "(settings)" folder.
+
+ ATTENTION: Some weapon.dat mods already increase the distance and accuracy of weapons,
+            and this mod also does this, but in A.I., so if you use it, the difficulty of
+            game can get too high.
+
+
+Version: v2.1
+--------------------
+
+Author: Junior_Djjr
+
+
+====   MixMods.com.br                ====
+====   fb.com/FamiliaMixMods         ====
+====   youtube.com/JuniorDjjrMixMods ====
+

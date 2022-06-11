@@ -1,0 +1,10 @@
+Radar: ThePedro004
+Radar Base: yojo2 & ernestin1
+Radar Quadrado: Wesser
+Ícones: Neon
+Radar Map Color: Junior_Djjr
+Velocímetro Minimalista: HybridTheory
+
+MobileHud:
+Autor: DK22Pac
+Ajuda e edições: SaH4PoK, edups

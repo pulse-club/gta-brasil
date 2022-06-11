@@ -1,0 +1,1 @@
+Em caso de crash, certifique-se que colocou o hud.txd dentro da pasta models/TXD

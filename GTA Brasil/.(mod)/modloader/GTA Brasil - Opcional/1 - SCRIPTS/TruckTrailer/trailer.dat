@@ -1,0 +1,23 @@
+# "trator" é simplesmente quem vai puxar o "trailer"
+# Você pode ver os números ID dos modelos no arquivo "data/vehicles.ide".
+#A - ID do trator (caminhão)
+#B - ID da primeira variação de trailer
+#C - ID da segunda variação de trailer
+#D - ID da terceira variação de trailer
+#E - ID da quarta variação de trailer
+#F - Usar cores do trailer no trator (útil para ônibus sanfona) (0=não, 1=sim)
+#G - Usar extras do trailer no trator (0=não, 1=sim)
+#H - Sempre aparecer com trailer (0=não, 1=sim)
+
+#B,C,D,E - Para os reboques da "towtruck" é possível escrever não só os IDs dos modelos, mas também o ID da classe.
+# 0-normal, 1-poorfamily, 2-richfamily, 3-executive, 4-worker (veja no arquivo vehicles.ide)
+
+#A,   B,   C,   D,   E,  F, G, H 
+
+trailer
+403, 435, 450, 584, 591, 0, 0, 0
+485, 606, 607, 607, 606, 0, 0, 0
+514, 584, 584, 584, 584, 0, 0, 1
+515, 435, 450, 584, 591, 0, 0, 0
+525, 400, 0,   1,   2,   0, 0, 1
+end

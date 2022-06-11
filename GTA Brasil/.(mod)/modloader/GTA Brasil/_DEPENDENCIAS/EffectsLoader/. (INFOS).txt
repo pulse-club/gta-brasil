@@ -1,0 +1,1 @@
+Usado no GTA Brasil para o efeito de jetpack na pasta "models\effects" na pasta raiz do seu jogo.

@@ -1,0 +1,8 @@
+carcols.dat
+cabbie, 11,11
+
+handling.dat
+CABBIE     2000.0    5500.0   2.0    0.0 0.0  -0.3  75  0.75 0.80 0.52 	4 165.0 20.0 10.0 R P 	5.0   0.60 0 30.0  	1.2  0.1   0.0   0.27 -0.17 0.5  0.2		0.24 0.48 25000 	20			0			1  1	0
+
+vehicle.ide
+438, 	cabbie, 	cabbie, 	car, 		CABBIE, 	CABBIE, 	null,	taxi,		3, 	0,	0,		-1, 0.72, 0.72,		0

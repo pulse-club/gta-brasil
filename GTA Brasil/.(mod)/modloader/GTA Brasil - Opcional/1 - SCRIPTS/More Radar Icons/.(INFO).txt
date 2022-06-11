@@ -1,0 +1,2 @@
+Está causando um bug com as logos da rádio
+Caso queira ativar ao iniciar o jogo aperte F7

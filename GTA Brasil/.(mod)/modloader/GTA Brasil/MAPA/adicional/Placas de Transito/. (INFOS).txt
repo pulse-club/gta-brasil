@@ -1,0 +1,13 @@
+ANTES DE INSTALAR:
+Baixe esse mod para funcionar sem problemas: https://www.mixmods.com.br/2014/09/iiivcsa-open-limit-adjuster.html
+-----------------------------------------------------------------------------------------------------------------------------
+OS IDS USADOS SÃO DAS PLACAS DO SAMP evite mods com esses IDS.
+-----------------------------------------------------------------------------------------------------------------------------
+ 
+Autores:
+Modelo das placas - SAMP
+98% Mapping - RetrKill0 (FJB).
+2% Mapping - ThePedro004.
+Primeiro decal - Fred William.
+Criação de vários modelos decal transito e placas - RetrKill0 (FJB).
+Correções de física, iluminação e textura: Junior_Djjr

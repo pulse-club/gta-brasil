@@ -1,0 +1,48 @@
+-==Tradução GTA San Andreas 1.2==-
+
+História:
+
+A tradução de GTA San Andreas para PC foi lançada originalmente em 22/07/05, pelo grupo "Grupo de Tradução - San Andreas". Apesar
+da tradução ter ajudado a muitos entender a história, haviam VÁRIOS erros na tradução, como erros de tradução, erros de ortografia
+e coisas faltando traduzir. Após meu (MJay/MJarcos) inglês ficar mais afiado, comecei a perceber os erros na tradução e resolvi
+iniciar uma revisão completa da tradução. Ela demorou um pouco pois são muitos textos e a ferramenta que usei para
+exportar/importar textos não aceita caracteres especiais (´, ç, ã e õ) e também por que sou preguiçoso. Inspirado na localização
+oficial de GTA V, resolvi deixar a tradução mais adaptada o possível colocando gírias e trocadilhos sempre que possível e com a
+sugestão de Junior_Djjr (MixMods), apliquei personalidade aos personagens.
+
+Linha do Tempo da Tradução:
+
+18/12/2004 - O Afrânio inicia os trabalhos de tradução
+??/01/2005 - Régis e Fábio começam a ajudar.
+??/04/2005 - Contato com o Magdiel, Filipi e Diego entram. Fundação do Grupo.
+27/05/2005 - Os trabalhos de tradução são concluídos. Revisão iniciada.
+01/06/2005 - O site do Grupo de tradução é lançado
+07/06/2005 - A versão PC do San Andreas é lançada.
+08/06/2005 - O Grupo tem acesso ao american.gxt da versão PC.
+??/06/2005 - As duas primeiras Screens da tradução são liberadas, ainda com ä ao invés de ã.
+22/06/2005 - Editado o fonts.txd e resolvido o problema do til.
+01/07/2005 - O site do Grupo começa a receber atualizações constantes.
+??/07/2005 - Caio e Frank Parker iniciam a segunda revisão do jogo.
+11/07/2005 - Mobile de luto... trabalhos interrompidos por 4 dias.
+17/07/2005 - Trabalho 100% concluído. Início dos testes.
+22/07/2005 - Lançamento da Tradução para o português do GTA San Andreas.
+
+XX/XX/2015 - MJay/MJarcos começa os trabalhos de revisão e tradução
+03/09/2016 - MJay/MJarcos apresenta seu projeto na MixMods e lança a primeira versão (inacabada) da tradução
+05/09/2016 - Junior_Djjr começa a revisar a tradução
+11/09/2016 - mathnoobsxx mostra alguns erros na revisão
+18/09/2016 - MJay/MJarcos termina a revisão
+27/12/2016 - Junior_Djjr corrige mais coisas baseado no que foi reportado na MixMods e cria a primeira versão alternativa
+05/03/2017 - Junior_Djjr corrige "Atirar" para "Bombeiros" na legenda.
+07/04/2017 - Junior_Djjr troca "eu sou o Fumaçãum" de volta para a clássica frase "yo soy el Grando Smokio"; Trocado "Lucros" por "Ganhos".
+07/07/2017 - Junior_Djjr continua corrigindo alguns pequenos erros e trocando algumas palavras. Geralmente erros relatados nos comentários do post da MixMods.
+18/08/2018 - Junior_Djjr revisa e corrige mais centenas de textos, como textos não utilizados pelo jogo mas reativados por mods, revisão das missões de introdução e outras correções baseadas num .gxt original corrigido pela comunidade.
+01/07/2019 - Junior_Djjr corrige mais alguns erros apontados nos comentários e pelo funkyblackcat
+07/07/2019 - Junior_Djjr, de novo
+17/07/2019 - Junior_Djjr, de novo
+13/08/2019 - O usuário "Carinha do GTA", nos comentários da MixMods, começou a re-re-re-revisar todo o texto e enviou centenas de correções. Junto com outras correções enviadas e problemas encontrados, Junior_Djjr corrigiu mais de 500 ou 600 linhas.
+16/08/2019 - "Carinha do GTA" terminou de re-re-re-revisar os textos, segundo ele, foram muito mais que 600 linhas corrigidas, todo o texto da tradução foi revisado.
+21/08/2019 - Junior_Djjr, corrigido todos os "X segundo" por "X segundos".
+01/09/2019 - SlowSoldier21 adaptou a tradução para o GTA SA mobile (Android).
+31/01/2021 - Download reorganizado e adicionado novos .txd.
+14/05/2021 - Corrigido um erro relatado pelo BRKsEDU.

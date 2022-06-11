@@ -1,0 +1,14 @@
+Changelog GTA Brasil 0.3.5 - pulseclub.net
+
+- Novo Timecyc por EMST.
+- Corrigida iluminação escura.
+- Atualizado VehFuncs e removido SkyGFX.
+- Nova Interface:
+ * Mobile HUD Modificado.
+ * Mais alguns scripts por Junior_Djjr (Full Background Menu).
+- Removida a Rádio, agora é opcional novamente.
+- Removido Load Whole Map.
+- Removido Shadow Height Fix (já está incluído no Mix Sets)
+- Removidos alguns scripts que causavam crash.
+- Adicionado novo video de introdução.
+- Removido a maioria dos opcionais que não eram essenciais ao projeto.

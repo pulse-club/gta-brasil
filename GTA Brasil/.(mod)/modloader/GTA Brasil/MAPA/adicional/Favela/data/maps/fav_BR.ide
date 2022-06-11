@@ -1,0 +1,132 @@
+objs
+# Favela by Base 05
+11925, barraco2, barracos, 200, 0
+11926, barraco, barracos, 200, 0
+11927, island_rio_lod, fav_lod, 800, 128
+11928, lod_ilhafavcs, fav_lod, 800, 128
+11929, ilha_favcs, fav_island, 299, 0 
+11930, palco, palco, 299, 0
+
+# Favela City Of God
+12300, island_rio, fav_island, 299, 0
+12301, fav_brick, fav_h, 299, 0
+12302, fav_fastfood, fav_h, 299, 0
+12303, fav_football, fav_h, 299, 0
+12304, fav_gloth, fav_h, 299, 0
+12305, fav_gr1, fav_h, 299, 0
+12306, fav_gr2, fav_h, 299, 0
+12307, fav_h1, fav_h, 299, 0
+12308, fav_h2, fav_h, 299, 0
+12309, fav_h3, fav_h, 299, 0
+12310, fav_h4, fav_h, 299, 0
+12311, fav_h5, fav_h, 299, 0
+12312, fav_h6, fav_h, 299, 0
+12313, fav_h7, fav_h, 299, 0
+12314, fav_h8, fav_h, 299, 0
+12315, fav_h9, fav_h, 299, 0
+12316, fav_h10, fav_h, 299, 0
+12317, fav_h11, fav_h, 299, 0
+12318, fav_h12, fav_h, 299, 0
+12319, fav_h13, fav_h, 299, 0
+12320, fav_h14, fav_h, 299, 0
+12321, fav_h15, fav_h, 299, 0
+12322, fav_h16, fav_h, 299, 0
+12323, fav_h17, fav_h, 299, 0
+12324, fav_h18, fav_h, 299, 0
+12325, fav_jungle, fav_h, 299, 0
+12326, fav_paint, fav_h, 299, 0
+12327, fav_palm, fav_h, 299, 0
+12328, fav_plita, fav_h, 299, 0
+12329, fav_stolb, fav_h, 299, 0
+12330, fav_zont, fav_h, 299, 0
+12331, fsv_grill, fav_h, 299, 0
+12332, palm_banan, fav_h, 299, 0
+12333, fav_01, fav_props, 299, 0
+12334, fav_02, fav_props, 299, 0
+12335, fav_bask, fav_props, 299, 0
+12336, fav_nation, fav_props, 299, 0
+12337, fav_palka, fav_props, 299, 0
+12338, fav_provoda, fav_props, 299, 0
+12339, fav_shp, fav_props, 299, 0
+12340, fav_stroika, fav_props, 299, 0
+12341, fav_tank, fav_props, 299, 0
+12342, fav_voda, fav_props, 299, 0
+12343, fav_wall, fav_props, 299, 0
+12344, fav_yel, fav_props, 299, 0
+12345, fav_zap, fav_props, 299, 0
+
+# Favela TC GTA Brasil
+# 14910-14958[71]
+14910, ant_sky, props_antenas, 299, 0
+14911, ant_oi, props_antenas, 299, 0
+14912, ant_claro, props_antenas, 299, 0
+14913, ant_1, props_antenas, 299, 0
+14914, antenap, props_antenas, 299, 0
+14915, mesa_skol, props_quintal, 299, 0
+14916, mesa_brahma, props_quintal, 299, 0
+14917, trash01, trashmod, 299, 0
+14918, trash02, trashmod, 299, 0
+14919, trash03, trashmod, 299, 0
+14920, trash04, trashmod, 299, 0
+14921, placa_cs, fav_island, 299, 0
+14922, fav_oficasa, fav_h, 299, 0
+14923, fav13, favela_house, 299, 0
+14924, fav_1fj, fav_h, 299, 0
+14925, ball_prop, props_quintal, 299, 0
+14926, fav_poste, fav_props, 299, 0
+14927, barracon1, barracos, 299, 0
+14928, fav_vil, fav_vil, 299, 0
+14929, fav1, favela_house, 299, 0
+14930, jrl_serra, favela_house, 299, 0
+14931, cx_dagua_f, fav_props, 299, 0
+14932, barcs16, favela_house, 299, 0
+14933, truck_abacaxi, props_feira, 299, 0
+14934, churras_feira, props_feira, 299, 0
+14935, camelo_roupas, props_feira, 299, 0
+14936, kombi_cana, props_feira, 299, 0
+14937, caixas_feira, props_feira, 299, 0
+14938, barraca_fruta1, props_feira, 299, 0
+14939, barraca_fruta2, props_feira, 299, 0
+14940, mesa_branca, props_quintal, 299, 0
+14941, vassoura1, props_quintal, 299, 0
+14942, vassoura2, props_quintal, 299, 0
+14943, pontobus, props_diversos, 299, 0
+14944, manu_bike, props_quintal, 299, 0
+14945, cadeira_branca, props_quintal, 299, 0
+14946, piscina_10k, props_quintal, 299, 0
+14947, piscina_quintal, props_quintal, 299, 0
+14948, tanque_quintal, props_quintal, 299, 0
+14949, cimento, props_diversos, 299, 0
+14950, pilha_cimento, props_diversos, 299, 0
+14951, gaiola, props_quintal, 299, 0
+14952, bota_v1, props_quintal, 299, 0
+14953, bota_v2, props_quintal, 299, 0
+14954, maq_sorvete, props_diversos, 299, 0
+14955, tachao, props_diversos, 299, 0
+#14956 (LIVRE)
+#14957 (LIVRE)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+end

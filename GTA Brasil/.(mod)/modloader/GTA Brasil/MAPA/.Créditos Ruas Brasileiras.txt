@@ -1,0 +1,32 @@
+= Ruas Brasileiras
+Origem: https://www.mixmods.com.br/2015/10/ruas-brasileiras-mixmods.html
+
+Autor: Junior_Djjr
+Textura de asfalto base: Meck
+Texturas Váriadas e remap: RetrKill0 (FJB)
+
+= SARoads
+Origem: https://www.mixmods.com.br/2017/11/saroads-novas-ruas-hd.html
+
+Autor: ThePedro004 (Edição/Montagem), Anime_Boom, Cryhd, Arc_Angel, EpriTeX & Reyser (Texturas do L.A. Roads), ParoXum & BLITZ (Texturas do SRt3), dima001rus & MaKs_IV (Texturas do RoSa), Início Remap no deserto RetrKill0 (FJB)
+
+
+= Ruas Brasileiras com Sinalização Horizontal v2 (GTA Brasil) 
+Versão GTA Brasil adaptado ao jogo normal: https://central-mods.blogspot.com/2021/03/gta-sa-ruas-brasileiras-com-sinalizacao.html
+
+LS e Rural:
+Textura de asfalto base: Meck
+Autor base usada: Junior_Djjr
+Autor Texturas Variadas, novas texturas e remap: RetrKill0 (FJB)
+
+SF e Estrada:
+Autor: Desconhecido
+Edições SF: JOOj
+Edições estradas: RetrKill0
+
+LV e Deserto:
+ThePedro004 (Edição/Montagem)
+Anime_Boom, Cryhd, Arc_Angel, EpriTeX & Reyser (Texturas do L.A. Roads),
+ParoXum & BLITZ (Texturas do SRt3),
+dima001rus & MaKs_IV (Texturas do RoSa).
+Início Remap no deserto RetrKill0 (FJB)

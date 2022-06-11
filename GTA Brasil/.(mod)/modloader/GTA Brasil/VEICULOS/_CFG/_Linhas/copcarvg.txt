@@ -1,0 +1,8 @@
+carcols.dat
+copcarvg, 1,1
+
+vehicle.dat
+598, 	copcarvg,	copcarvg,	car, 		POLICE_VG, 	POLICLV,	null,	ignore,		5,	0,	0,		-1, 0.92, 0.92,		-1
+
+handling.cfg
+POLICE_VG	3500.0	7000.0	2.2	0.0	0.0	-0.2	80	0.80	0.80	0.52	5	170.0	20.0	5.0	4	P	8.5	0.50	0	30.0	0.7	0.15	0.0	0.34	-0.20	0.5	0.5	0.44	0.30	130000	00004040	500000	0	1	0

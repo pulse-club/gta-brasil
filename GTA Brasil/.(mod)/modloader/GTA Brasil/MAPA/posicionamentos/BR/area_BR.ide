@@ -1,0 +1,73 @@
+objs
+
+# 11925~11930 (fav.ide)
+# 12300~12345 (fav.ide)
+
+# Id's Reservados para a TC GTA Brasil
+# 12346-12399 [46]
+12346, rembr, props_road, 299, 0
+12347, cade_1, props_road, 299, 0
+12348, cade_2, props_road, 299, 0
+12349, bueiro, props_road, 299, 0
+12350, ore_street, props_city, 299, 128
+12351, ore_street2, props_city, 299, 128
+12352, rotary, props_city, 299, 0
+12353, reclix, props_santos, 299, 128
+12354, chuvp_santos, props_santos, 299, 0
+12355, bondeonde, props_santos, 299, 0
+12356, osdp, osdp, 299, 0
+12357, placarua_a, props_road, 299, 128
+12358, placarua_b, props_road, 299, 128
+12359, soccer_net, soccer_net, 299, 0
+12360, f_chev, f_cars, 299, 8
+12361, f_fusca, f_cars, 299, 0
+12362, c_bruxa, c_bruxa, 299, 0
+12363, base_pmsp, base_pm, 299,0
+#12364, g_cb2_1, g_cb2_1, 299,0
+#12365, g_cb2_2, g_cb2_2, 299,0
+#12366, g_cb2_3, g_cb2_3, 299,0
+#12367, g_cb2_4, g_cb2_4, 299,0
+#12368, g_cb2_5, g_cb2_5, 299,0
+12369, speedcamera1, props_samp, 299, 128
+12370, emptydummy, emptydummy, 50, 0
+12371, botog, botog, 40, 128
+12372, securitycamera, props_samp, 299, 128
+# 12373~12382 (bairro1.ide)
+12383, portao_1_porta, portao_1, 299, 2097284
+12384, portao_1_garagem, portao_1, 299, 2097284
+12385, rampa_cal_1, rampa_cal, 100, 0
+# 12386-12388 (bairro1.ide)
+
+# Tênis nos fios
+13668, shoesonthewires1, shoesonthewires, 300, 2097152
+
+# 14910-14955 (fav.ide)
+14956, casacarlosint2, casacarlosint, 75, 40
+14957, casacarlosint1, casacarlosint, 75, 0
+14958, shopspint, shopspint, 75, 0
+
+# 15316 (TC_transito.ide)
+
+# Id's Mod Lombadas Brasileiras (MixMods)
+15465, lomb_mixmods_a, lomb_mixmods, 299, 1
+15466, lomb_mixmods_b, lomb_mixmods, 299, 1
+15467, lomb_mixmods_c, lomb_mixmods, 299, 1
+15468, lomb_mixmods_d, lomb_mixmods, 299, 1
+15469, lomb_mixmods_ad, lomb_mixmods, 299, 1
+15470, lomb_mixmods_bd, lomb_mixmods, 299, 1
+15471, lomb_mixmods_cd, lomb_mixmods, 299, 1
+15472, lomb_mixmods_dd, lomb_mixmods, 299, 1
+15473, lomb_sign, lomb_mixmods, 299, 128
+
+#Bar
+12500, barmta, barmta, 200, 0
+
+#IDS GTA BR Alpha 0.1
+#19164, g_sol1, benches, 299, 128
+#19165, g_sol2, benches, 299, 128
+#19166, g_sol3, benches, 299, 128
+#19167, g_sol4, benches, 299, 128
+#19168, g_sol5, benches, 299, 128
+
+# 199xx (TC_transito.ide) com ids do samp (samp.ide também) 
+end

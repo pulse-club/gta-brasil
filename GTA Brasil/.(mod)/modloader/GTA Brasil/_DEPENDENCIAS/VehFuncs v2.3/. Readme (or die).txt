@@ -1,0 +1,47 @@
+  __  __ _      __  __           _     
+ |  \/  (_)    |  \/  |         | | 2020
+ | \  / |___  _| \  / | ___   __| |___ 
+ | |\/| | \ \/ / |\/| |/ _ \ / _` / __|
+ | |  | | |>  <| |  | | (_) | (_| \__ \
+ |_|  |_|_/_/\_\_|  |_|\___/ \__,_|___/
+                                       
+
+=======   MixMods.com.br   ======= - Best visualization in Notepad with monospaced font, as "Consolas".
+
+
+------- Instructions:
+
+Extract the folder "VehFuncs" to your Modloader folder.
+
+-- Download the latest version of Modloader: MixMods.com.br/2015/01/SA-Modloader.html
+
+-- RECOMMENDED IndieVehicles.asi (for some functions): MixMods.com.br/2019/06/IndieVehicles.html
+
+
+
+ATTENTION: The mod includes "gsx.asi", make sure that you don't already have it installed by another mod that also uses it.
+
+Learn how to adapt a vehicle here: https://github.com/JuniorDjjr/VehFuncs/wiki
+
+There's a basic logging sytem. You can find infos, errors etc in file "VehFuncs.log" at mod asi folder.
+The mod also detect and shows informations about some common vehicle crash errors.
+It's written when closing or defocus (e.g. minimize) the game.
+ 
+If you don't really need the .log (are you sure the mod is working fine),
+you can disable it in VehFuncs.ini under "Log" for a small performance improvement if you have too many adapted cars.
+
+
+
+Version: v2.2 beta
+--------------------
+
+Author: Junior_Djjr
+Mod GSX and helps: Fabio
+Thanks to: DK22Pac, _F_, Avant, M4k3, xXKenBlockXx, dxivilea, recoil, Zeneric
+Special thanks to plugin-sdk contributors
+
+
+====   MixMods.com.br                ====
+====   fb.com/FamiliaMixMods         ====
+====   youtube.com/JuniorDjjrMixMods ====
+

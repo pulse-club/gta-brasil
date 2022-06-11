@@ -1,0 +1,5 @@
+Não mude a pasta "GTABR-Celular Beta" de lugar. Mantenha exatamente como está, dentro de "modloader\GTA Brasil - Opcional". Caso contrário o celular não vai funcionar.
+
+Por conta do mod "STATUS DISCORD" o jogo não inicia sem o mesmo iniciado. Caso não queira isso, basta remove-lo 
+
+Na pasta "GTA Brasil New - WIP" contém uma prévia de uma das coisas que vem no futuro. Mas avisando. Possui Bugs pos não estar pronto. Ative caso queira ver uma das coisas que estamos alterando próximo da praia. (pedimos que não grave com ele ativo)

@@ -1,0 +1,140 @@
+   ____ _____  _      ____                _ _ 
+  / ___|_   _|/ \    | __ ) _ __ __ _ ___(_) |
+ | |  _  | | / _ \   |  _ \| '__/ _` / __| | |
+ | |_| | | |/ ___ \  | |_) | | | (_| \__ \ | |
+  \____| |_/_/   \_\ |____/|_|  \__,_|___/_|_| 0.3.5
+                                              
+
+Site: tcgtabrasil.wixsite.com/tcgtabrasil
+Servidor Discord: discord.gg/24NJsrc
+Facebook: facebook.com/tcgtabr
+Grupo do Facebook: facebook.com/groups/306001639873028/
+Canal YouTube: youtube.com/channel/UCDo6pvz5Kwsw3IG2WAE7wyA
+
+DOWNLOAD GTA Brasil
+https://pulseclub.net/resources/gta-brasil.30/
+
+Visite nossa página de Downloads e confira nossos mods opcionais para incrementar sua gameplay!
+tcgtabrasil.wixsite.com/tcgtabrasil/downloads 
+
+• Avisos importantes:
+ - A venda deste mod é estritamente proibida.
+ - É proibido o reupload deste mod em qualquer lugar com objetivo de lucro! (Sharemods e derivados). Por favor, ao repostar, redirecione o download ao repositório público do GTA Brasil.
+
+------------------------------------------------------------------------
+
+COMANDOS ÚTEIS:
+
+• Celular:
+Shift Direito: Abre o celular / Seleciona opção
+Setas: Navega entre apps/opções
+Ctrl Direito: Fecha o celular / Retorna
+
+• Loja de Tuning:
+Y: Seleciona opção
+N: Retorna
+Setas: Navega entre opções
+
+• Pagar IPTU:
+Digite "IPTU" 
+
+--------------------------------------------------------------------------------------------
+
+COMO INSTALAR
+
+1 - Utilize um GTA San Andreas sem mods, instalado em qualquer pasta menos a Arquivos de Programas. Caso não possua, baixe o instalador original: 
+miscellaneous-c.blogspot.com/2019/05/download-gta-san-andreas-pc.html
+
+2 - Baixe o pack Essentials (mixmods.com.br/2019/08/Essentials.html) e extraia para a pasta raiz do seu GTA San Andreas.
+
+3 - Baixe e extraia o conteúdo da pasta .(mod) para a raiz do seu GTA San Andreas.
+
+---------------------------------------------------------------------------------------------
+
+PERGUNTAS FREQUENTES
+
+Por que vocês não colocam Rio de Janeiro, Pernambuco, Acre no GTA Brasil?
+O GTA Brasil ambientará a cidade de Santos e seus arredores. Foi escolhida por ter semelhanças com Los Santos.
+
+Eu não gostei de alguma coisa no GTA Brasil. Tem como vocês alterarem?
+Como o GTA Brasil utiliza o Modloader, você mesmo poderá alterar carros, texturas, árvores, por exemplo. Mods como SkyGFX virão com alguns presets, mas você também poderá usar um customizado seu. 
+
+O GTA Brasil terá uma história própria?
+Sim. Porém, ainda é cedo para aplicá-la em missões, pois o mapa sofre constantes mudanças.
+
+O GTA Brasil irá dublar os personagens?
+Temos alguns policiais, paramédicos e falas de pedestres dubladas. Mas queremos o jogo totalmente dublado na versão final.
+
+Quais plataformas receberão o GTA Brasil?
+Nosso foco hoje é majoritariamente na versão de PC.
+
+Onde posso achar as lendas?
+As lendas tem lugares e momentos específicos para aparecerem. Algumas são mais difíceis de encontrar que outras. A pergunta que você deve fazer é "Será que eu sairei vivo depois de encontrar uma?". 
+
+Novos bairros serão criados?
+Sim, novos bairros foram criados e diversos outros estão sendo projetados. A versão 0.3 é focada em imersão, ou seja, "sentir-se no Brasil". Em atualizações futuras voltaremos a trabalhar em novos bairros.
+
+---------------------------------------------------------------------------------------------
+
+ERROS E SOLUÇÕES CONHECIDAS
+
+As texturas das roupas estão todas bugadas:
+Provavelmente você está usando o mod Mudar de roupa em qualquer lugar ou similar. Desinstale-o. Para escolher as roupas do player, use as lojas ou o mod Skin Selector.
+
+As texturas das ruas não carregam:
+Verifique se não há nenhum mod duplicado (Silent Patch, Open Limit Adjuster, etc).
+
+Error loading plugin cleo/newOpcodes.cleo:
+Abra o Gerenciador de Tarefas e encerre o processo gta_sa.exe.
+
+Jogo travou na tela de carregamento/não está abrindo (Windows 10):
+Verifique se o Windows Defender não bloqueou a execução do Open Limit Adjuster.
+
+Jogo está travando:
+Remova a pasta "2 - GRAFICOS" dentro de "GTA Brasil v0.3\_OPCIONAL\".
+---------------------------------------------------------------------------------------------
+
+CRÉDITOS
+
+• MODELOS:
+Raphael Papini, RetrKill0, Johnd120, Junior_Djjr, Furiioso, Mystertv, MS, Jacobi, Tateco, Killer_XD, CanarioDaTerra, Ryan, Sleep, webster, Pequeno, OJTrue, cOSTa, LightVelox, Razor, Fred William, Takazi, Iuricoelh, Jujubão, Jestic., DaftoNTive.
+
+• TEXTURAS:
+Junior_Djjr, RetrKill0, Johnd120, JOKDOG,  Victor_Troquetti, Raphael Papini, ThePedro004, Legacy, Jacobi, Meck, Fred William, Pequeno, Mazen, Eggsy_NDQ, Jujubão, iuricoelh, zedouglinhas.
+
+• MAPPING:
+RetrKill0, ThePedro004, Jacobi, Scop, Junior_Djjr, iuricoelh, Jujubão, Mystertv, Police Man, The Project San Andreas Team, Format c:, Reyks, Camil1999, 2002juing, ZiggyStardust, Firefly, Renato Russo, Emanuel23, nyolc8, CR_crash, PRK99, Fred William.
+
+• VEÍCULOS:
+RetrKill0, RicardoMDS, Junior_Djjr, Vermilion093 3D, NK Gameplays, Th14g0MR, Ivys Sousa, Farias, Raphael Papini, Mazen, Killer_XD, MatheusDoTrabalho, american.gxt, Estabilha, jumpsuit, Atom889, Hunter of Games, LFG, Fenix3D Mods, Patrick, 1Hellen, Nabx3n, modmarking alliance, Luxurious, Krystofer, Sallie, ?Stella?, MCHammer, kakutouka, autobahn, paradise, Qwerty Van Hallen, vovchikon, nolio, , SilPen, HellHate, Rodrigo Assunção, Alex Penza, Bigtwingo, FunGt, Wilker Santos, JuRuGamer, MVMOTORS, ShinyG, Coroian, HUM3D, Edu3D, Pedro Rocha, davidfel, Confrade, BMT (Brazilian Motors Team), Todd587, Spit81, pescador's ltda, InquisidorMODS, Everton Fernandes TM, A.KuS, Geyson, Etc_Gabriel, Sin5k4, CSR2garage, Athalone's, Ksalom, L.D.G, Northstar Mods, GCT, Re-Volt Race, Sh!t H3@D, Tasso3D, Burnett, Andre, PinIuli, Saturno, Emmanuelocanto14, Comandante Lopes, Nyolc8, HeD, Ramiro, J3D, Turn10, Site do GTA, Estemen456, Default Station, alliance, Raimar Lunardi, Athalone, Pack 3D models, confrade, TheMadeMan, SIlPEN, HellHatte, Vovchikon, Bigtwingo, Kurt370, casperxyt, ERENTIPO, Holkomes, Trok, LuanWrx0128, menino, Fuji3D, Renan3D, eduardo, Jean Odorico, Victor Nathan (SAM by MEP).
+
+• SCRIPTS: 
+nadalao, HybridTheory, Junior_Djjr, TG4M3R, Veryzon, PRK99, Nex, FilipeS, LightVelox, ArTuRMV, Daniel Santos, RetrKill0, Kleber, kenking, Izerli, Den_Spb, MKKJ, Wesser, HybridTheory, Fabio.
+
+• PLAYER:
+Junior_Djjr, ThePedro004, Victor_Troquetti, Êdhh3D, RetrKill0, ReneLcst, Fred William.
+
+• PEDS:
+thiago201720, LightVelox, Razor, ThePedro004, Junior_Djjr, Rain, Jacobi, Raphael Papini, RetrKill0, Harknees, Drey7K, Vini$bkaos, ReneLcst, Rockstar, Witchinghour; ist. outlet, or other, unknown.
+
+• ARMAS:
+Junior_Djjr, ThePedro004, Raphael Papini, Johnd120, Victor_Troquetti, nadalao, RetrKill0, Pequeno, critical, Rain.
+
+• ÁUDIOS:
+Fransley, Harknees, Raphael Papini, RetrKill0, Victor Troquetti, Jacobi, Junior_Djjr, MKKJ, Pequeno. 
+
+• DUBLAGENS E TRADUÇÃO:
+Thamker Vídeos, Harknees, RetrKill0, MJay/MJarcos, Junior_Djjr, Matheus Rivaldo, Jacobi. 
+
+• HUD:
+Victor_Troquetti, Ziltronic, RetrKill0, neon.
+
+• ARTWORKS:
+Yhdf, Victor_Troquetti, Henrique-Fast, Raphael Papini, OJTrue, Harknees, RetrKill0, Jacobi.
+
+• TESTES:
+NoMax, RetrKill0, zedouglinhas, Fred William, Junior_Djjr, Jacobi, Breeza e Davy Lopes.
+
+• MISC:
+EMST
+-------------------------------------------------------------------------------------------

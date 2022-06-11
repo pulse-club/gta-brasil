@@ -1,0 +1,1 @@
+Estes arquivos são gerados automaticamente por um mod "CarCfgHelper.SA.asi"

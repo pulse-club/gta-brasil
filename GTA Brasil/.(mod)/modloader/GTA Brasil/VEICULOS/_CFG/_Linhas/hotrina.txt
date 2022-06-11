@@ -1,0 +1,3 @@
+502,	hotrina, 	hotrina, 	car, 		MTRUCK_A, 	HOTRINA, 	null,	ignore, 	10,	0,	4fff,		-1, 0.84, 0.84,		-1
+
+hotrina, 1,1, 15,15, 33,33, 0,0, 116,116, 45,45, 92,92, 13,13

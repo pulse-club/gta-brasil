@@ -1,0 +1,43 @@
+#TC GTA Brasil - IDs SAMP
+
+objs
+19981, SAMPRoadSign1, SAMPRoadSigns, 299, 128
+19948, SAMPRoadSign2, SAMPRoadSigns, 299, 128
+19949, SAMPRoadSign3, SAMPRoadSigns, 299, 128
+19950, SAMPRoadSign4, SAMPRoadSigns, 299, 128
+19955, SAMPRoadSign5, SAMPRoadSigns, 299, 128
+19956, SAMPRoadSign6, SAMPRoadSigns, 299, 128
+19957, SAMPRoadSign7, SAMPRoadSigns, 299, 128
+19979, SAMPRoadSign8, SAMPRoadSigns, 299, 128
+19968, SAMPRoadSign10, SAMPRoadSigns, 299, 128
+19969, SAMPRoadSign12, SAMPRoadSigns, 299, 128
+19970, SAMPRoadSign13, SAMPRoadSigns, 299, 128
+19989, SAMPRoadSign14, SAMPRoadSigns, 299, 128
+19991, SAMPRoadSign15, SAMPRoadSigns, 299, 128
+19971, SAMPRoadSign16, SAMPRoadSigns, 299, 128
+19951, SAMPRoadSign17, SAMPRoadSigns, 299, 128
+19952, SAMPRoadSign18, SAMPRoadSigns, 299, 128
+19978, SAMPRoadSign19, SAMPRoadSigns, 299, 128
+19967, SAMPRoadSign20, SAMPRoadSigns, 299, 128
+19976, SAMPRoadSign21, SAMPRoadSigns, 299, 128
+19977, SAMPRoadSign22, SAMPRoadSigns, 299, 128
+19966, SAMPRoadSign23, SAMPRoadSigns, 299, 128
+19973, SAMPRoadSign24, SAMPRoadSigns, 299, 128
+19974, SAMPRoadSign25, SAMPRoadSigns, 299, 128
+19958, SAMPRoadSign26, SAMPRoadSigns, 299, 128
+19959, SAMPRoadSign27, SAMPRoadSigns, 299, 128
+19960, SAMPRoadSign28, SAMPRoadSigns, 299, 128
+19990, SAMPRoadSign29, SAMPRoadSigns, 299, 128
+19965, SAMPRoadSign30, SAMPRoadSigns, 299, 128
+19961, SAMPRoadSign31, SAMPRoadSigns, 299, 128
+19962, SAMPRoadSign33, SAMPRoadSigns, 299, 128
+19963, SAMPRoadSign34, SAMPRoadSigns, 299, 128
+19964, SAMPRoadSign36, SAMPRoadSigns, 299, 128
+19983, signreto, decalruas, 299, 0
+19985, signretod, decalruas, 299, 0
+19986, signretoe, decalruas, 299, 0
+19987, signpref, decalruas, 299, 0
+19988, signpare, decalruas, 299, 0
+19975, signdevagar, decalruas, 299, 0
+15316, segregador, tachas, 299, 0
+end

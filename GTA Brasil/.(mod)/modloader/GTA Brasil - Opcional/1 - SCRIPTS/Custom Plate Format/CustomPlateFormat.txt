@@ -1,0 +1,39 @@
+; -- Custom Plate Format 0.1b --
+; --         by Deji          --
+;
+; Mod download and source available at:
+;   >> http://gtag.gtagaming.com/mods/103-custom-plate-format/
+;
+; --------------------------------------
+;             INSTALLATION
+;
+; THIS IS A README AND CONFIGURATION FILE. FUNNY, EH?
+;
+; Extract all contents (including this file) to your main GTASA installation directory.
+;
+; The very last line of this file configures the license plates. Any line beginning with ; is the README!
+;
+; --------------------------------------
+; Format:
+;   0 - Any numeric (0-9)
+;   A - Any alphabetical (A-Z)
+;   * - Any alphanumeric (0-9,A-Z)
+;
+; Lowercase letters aren't formatted (and only A is at the moment), so use lowercase 'a' for A...
+;   a - A
+;   y - Y
+;   C - C
+;   4 - 4
+;
+; Use . for literal 0.
+;   . - 0
+;
+; Space characters represent 1 space each (including tabs, etc).
+;  \t - _
+;
+; Any other letter/number (aBC-Z, 123-9.) inputted will be used literally
+;
+; License plates generally require 8 characters max, although this mod will support hacks increasing up to 16.
+;
+; Example could produce 'D3J1 5JY', 'D3J1 09A', 'D3J1 53X', etc:
+AAA 0000

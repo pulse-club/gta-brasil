@@ -1,0 +1,21 @@
+MAPPING:
+RetrKill0 (FJB)
+
+ADAPTAÇÃO:
+JOOj, RetrKill0 (FJB)
+
+SCRIPTS:
+nadalao; 
+
+Favela by Base 05:
+Original: Base05
+Modelos: Tatui Treta
+Correções e adaptação: Junior_Djjr
+
+Favela City Of God:
+Original: KOHDYKTOP
+Correções e adaptação: JOOj, Razor, Mystertv
+
+Palco:
+Original: Lucas3design, Black_Jack
+Alterações: RetrKill0 (FJB)

@@ -1,0 +1,3 @@
+firela, 3,3
+
+544, 	firela, 	firela, 	car, 		UTILITY, 	FIRELA, 	null,	ignore, 	3,	0,	0,		-1, 0.92, 0.92,		-1
